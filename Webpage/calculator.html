@@ -128,6 +128,7 @@
                         <select id="calcIndustry" class="w-full bg-[#041619] border border-gold/40 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-gold transition">
                             <option value="healthcare">Healthcare & Clinical Networks</option>
                             <option value="manufacturing">Industrial & Discrete Manufacturing</option>
+                            <option value="automotive">Automotive OEM & Connected Fleets</option>
                             <option value="fmcg">FMCG & Omni-Channel Retail</option>
                         </select>
                     </div>
@@ -173,6 +174,9 @@
                             </button>
                             <button type="button" onclick="document.getElementById('calcEmployees').value=2500; document.getElementById('calcTickets').value=9000; document.getElementById('calcIndustry').value='manufacturing'; document.getElementById('calcEmployees').dispatchEvent(new Event('input'));" class="px-3 py-1.5 rounded-lg bg-surface hover:bg-teal/10 border border-teal/30 text-[11px] text-slate-300 hover:text-tealGlow transition">
                                 Tier-1 Plant (2,500 staff)
+                            </button>
+                            <button type="button" onclick="document.getElementById('calcEmployees').value=3500; document.getElementById('calcTickets').value=14000; document.getElementById('calcIndustry').value='automotive'; document.getElementById('calcEmployees').dispatchEvent(new Event('input'));" class="px-3 py-1.5 rounded-lg bg-surface hover:bg-gold/10 border border-gold/30 text-[11px] text-slate-300 hover:text-gold transition">
+                                Auto OEM (3,500 staff)
                             </button>
                             <button type="button" onclick="document.getElementById('calcEmployees').value=5000; document.getElementById('calcTickets').value=20000; document.getElementById('calcIndustry').value='fmcg'; document.getElementById('calcEmployees').dispatchEvent(new Event('input'));" class="px-3 py-1.5 rounded-lg bg-surface hover:bg-cyan/10 border border-cyan/30 text-[11px] text-slate-300 hover:text-cyan transition">
                                 Global FMCG (5,000 staff)
@@ -300,6 +304,7 @@
                     <ul class="space-y-2">
                         <li><a href="./industries.html#healthcare" class="hover:text-gold transition">Healthcare Agility</a></li>
                         <li><a href="./industries.html#manufacturing" class="hover:text-gold transition">Manufacturing Asset Health</a></li>
+                        <li><a href="./industries.html#automotive" class="hover:text-gold transition">Automotive Connected Engineering</a></li>
                         <li><a href="./industries.html#fmcg" class="hover:text-gold transition">FMCG Inventory Precision</a></li>
                         <li><a href="./methodology.html" class="hover:text-gold transition">8–12 Week Sprints</a></li>
                     </ul>

@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Industry Accelerators Tab Switcher
     window.switchTab = function(tabName) {
-        const tabs = ['healthcare', 'manufacturing', 'fmcg'];
+        const tabs = ['healthcare', 'manufacturing', 'automotive', 'fmcg'];
 
         tabs.forEach(t => {
             const content = document.getElementById(`tab-${t}`);
@@ -98,6 +98,9 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (industry === 'manufacturing') {
             industryMultiplier = 1.15; // Downtime & Field Service impact
             blendedRate = 30;
+        } else if (industry === 'automotive') {
+            industryMultiplier = 1.22; // Telematics, supplier warranty & SDV complexity
+            blendedRate = 32;
         } else if (industry === 'fmcg') {
             industryMultiplier = 1.1;  // Stockout & PO velocity
             blendedRate = 26;
