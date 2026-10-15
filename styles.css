@@ -1,0 +1,69 @@
+/* Custom styling for AnshuAI (anshuai.in) */
+
+:root {
+    --brand-dark: #051214;
+    --brand-surface: #081c1f;
+    --brand-card: #0d282c;
+    --brand-gold: #c89f57;
+    --brand-gold-light: #e5c07b;
+    --brand-teal: #14b8a6;
+    --brand-teal-glow: #2dd4bf;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #051214;
+}
+::-webkit-scrollbar-thumb {
+    background: #153c40;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #c89f57;
+}
+
+/* Active Industry Tab Styling */
+.industry-tab-btn.active {
+    background: linear-gradient(135deg, #c89f57 0%, #e5c07b 100%);
+    color: #051214;
+    box-shadow: 0 4px 15px rgba(200, 159, 87, 0.35);
+}
+
+.industry-tab-btn:not(.active):hover {
+    background-color: rgba(20, 184, 166, 0.1);
+    color: #e2e8f0;
+}
+
+/* Glassmorphism Card Hover */
+.glass-panel {
+    background: rgba(13, 40, 44, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(200, 159, 87, 0.2);
+}
+
+/* Glowing text highlight */
+.glow-gold {
+    text-shadow: 0 0 20px rgba(200, 159, 87, 0.4);
+}
+
+.glow-teal {
+    text-shadow: 0 0 20px rgba(45, 212, 191, 0.4);
+}
+
+/* Smooth range slider track */
+input[type=range] {
+    accent-color: #c89f57;
+}
+
+/* Transition utility */
+.transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
