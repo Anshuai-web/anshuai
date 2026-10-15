@@ -125,18 +125,40 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCalculator();
     }
 
-    // 5. Contact Form Submission
+    // 5. Contact Form Submission with Anti-Spam & Input Sanitization
     const assessmentForm = document.getElementById('assessmentForm');
     const formSuccess = document.getElementById('formSuccess');
 
     if (assessmentForm) {
         assessmentForm.addEventListener('submit', (e) => {
             e.preventDefault();
+
+            // Check anti-spam honeypot
+            const botCheck = document.getElementById('botCheck');
+            if (botCheck && botCheck.value.trim() !== '') {
+                console.warn('Spam submission detected and blocked.');
+                return;
+            }
+
             const submitBtn = assessmentForm.querySelector('button[type="submit"]');
             if (submitBtn) {
                 submitBtn.disabled = true;
                 submitBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin mr-2"></i> Submitting...`;
             }
+
+            // Sanitize input values against script injection
+            const sanitize = (str) => str ? String(str).replace(/[<>]/g, '') : '';
+            const formData = {
+                firstName: sanitize(document.getElementById('formFirstName')?.value),
+                lastName: sanitize(document.getElementById('formLastName')?.value),
+                email: sanitize(document.getElementById('formEmail')?.value),
+                phone: sanitize(document.getElementById('formPhone')?.value),
+                company: sanitize(document.getElementById('formCompany')?.value),
+                title: sanitize(document.getElementById('formTitle')?.value),
+                vertical: sanitize(document.getElementById('formVertical')?.value),
+                serviceNowStatus: sanitize(document.getElementById('formServiceNowStatus')?.value),
+                notes: sanitize(document.getElementById('formNotes')?.value)
+            };
 
             // Simulate enterprise API intake
             setTimeout(() => {

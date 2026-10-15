@@ -79,6 +79,31 @@ To activate business email on Google Workspace (Gmail) for `anshuai.in`:
 
 ---
 
+## 5. Enterprise Security & HTTPS Hardening
+
+### A. Enforce HTTPS in GitHub
+1. Open your repository on GitHub: **`Anshuai-web/anshuai`**.
+2. Go to **Settings** &rarr; **Pages**.
+3. Under "Custom domain", verify `anshuai.in` shows "DNS check successful".
+4. Check the box **"Enforce HTTPS"**.
+   *(If temporarily grayed out, wait a few minutes while Let's Encrypt completes certificate issuance, then refresh and check the box).*
+
+### B. Add CAA Record (Certificate Authority Authorization)
+Prevents unauthorized certificate authorities from issuing fraudulent SSL certificates for `anshuai.in`:
+* **Type:** `CAA`
+* **Host / Name:** `@`
+* **Data / Value:** `0 issue "letsencrypt.org"`
+* **TTL:** `3600`
+
+### C. Add DMARC Record (Email Spoofing & Phishing Protection)
+Protects `Anshu@anshuai.in` from unauthorized spoofing:
+* **Type:** `TXT`
+* **Host / Name:** `_dmarc`
+* **Data / Value:** `v=DMARC1; p=quarantine; rua=mailto:Anshu@anshuai.in`
+* **TTL:** `3600`
+
+---
+
 ## 5. File Inventory
 
 * [`index.html`](./index.html): Complete production-ready corporate landing page.
