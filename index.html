@@ -54,69 +54,59 @@
 </head>
 <body class="bg-deep text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-gold selection:text-deep">
 
-    <!-- MAIN EXECUTIVE NAVIGATION -->
-    <header id="navbar" class="sticky top-0 z-50 backdrop-blur-xl bg-[#041619]/95 border-b border-gold/30 transition duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Brand Logo (Single-Line, Bold & Instantly Legible) -->
-            <a href="#hero" class="flex items-center gap-3.5 whitespace-nowrap group">
-                <div class="w-11 h-11 flex-shrink-0 flex items-center justify-center rounded-xl bg-gradient-to-br from-surface to-[#0a3138] border border-gold/40 shadow-lg shadow-teal/10 group-hover:border-gold transition duration-300 p-1">
+    <!-- MODERN FLOATING EXECUTIVE NAVIGATION -->
+    <header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 py-3 sm:py-4 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex items-center justify-between h-16 px-5 sm:px-6 rounded-full backdrop-blur-xl bg-[#041619]/90 border border-gold/30 shadow-2xl shadow-black/50">
+            <!-- Brand Logo (Intuitive, Clean & Modern) -->
+            <a href="#hero" class="flex items-center gap-2.5 group whitespace-nowrap">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-surface to-[#0a3138] border border-gold/50 flex items-center justify-center p-1 shadow-md shadow-teal/10 group-hover:border-gold transition">
                     <img src="./logo-icon.svg" alt="AnshuAI Emblem" class="w-full h-full object-contain">
                 </div>
-                <div class="flex items-center gap-3">
-                    <span class="text-2xl sm:text-3xl font-extrabold tracking-tight font-heading text-white whitespace-nowrap">
-                        Anshu<span class="text-gold">AI</span>
-                    </span>
-                    <span class="hidden md:inline-block h-4 w-[1px] bg-gold/40"></span>
-                    <span class="hidden md:inline-block text-xs font-bold tracking-[0.2em] text-goldLight uppercase whitespace-nowrap">
-                        Intelligence Illuminated
-                    </span>
-                </div>
+                <span class="text-xl sm:text-2xl font-extrabold tracking-tight font-heading text-white">
+                    Anshu<span class="text-gold">AI</span>
+                </span>
             </a>
 
-            <!-- Desktop Nav Links -->
-            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-200">
-                <a href="#overview" class="hover:text-gold transition whitespace-nowrap">Transformation</a>
-                <a href="#pillars" class="hover:text-gold transition whitespace-nowrap">Four Pillars</a>
-                <a href="#accelerators" class="hover:text-gold transition whitespace-nowrap">Accelerators</a>
-                <a href="#calculator" class="hover:text-gold transition whitespace-nowrap">ROI Estimator</a>
-                <a href="#roadmap" class="hover:text-gold transition whitespace-nowrap">Roadmap</a>
-                <a href="#about" class="hover:text-gold transition whitespace-nowrap">About</a>
+            <!-- Intuitive Desktop Nav (Pill-Hover Segment) -->
+            <nav class="hidden md:flex items-center gap-1 bg-white/[0.03] p-1 rounded-full border border-white/[0.06]">
+                <a href="#overview" class="px-4 py-1.5 text-xs font-semibold text-slate-300 hover:text-white hover:bg-white/[0.08] rounded-full transition whitespace-nowrap">Solutions</a>
+                <a href="#accelerators" class="px-4 py-1.5 text-xs font-semibold text-slate-300 hover:text-white hover:bg-white/[0.08] rounded-full transition whitespace-nowrap">Industries</a>
+                <a href="#calculator" class="px-4 py-1.5 text-xs font-semibold text-slate-300 hover:text-white hover:bg-white/[0.08] rounded-full transition whitespace-nowrap">ROI Estimator</a>
+                <a href="#roadmap" class="px-4 py-1.5 text-xs font-semibold text-slate-300 hover:text-white hover:bg-white/[0.08] rounded-full transition whitespace-nowrap">Methodology</a>
+                <a href="#about" class="px-4 py-1.5 text-xs font-semibold text-slate-300 hover:text-white hover:bg-white/[0.08] rounded-full transition whitespace-nowrap">About</a>
             </nav>
 
-            <!-- Actions -->
-            <div class="hidden sm:flex items-center gap-5">
-                <a href="mailto:contact@anshuai.in" class="text-xs text-slate-300 hover:text-white flex items-center gap-2 transition font-medium whitespace-nowrap">
-                    <i class="fa-regular fa-envelope text-gold"></i>
-                    <span>contact@anshuai.in</span>
+            <!-- Modern Action CTA -->
+            <div class="flex items-center gap-2 sm:gap-4">
+                <a href="#contact" class="hidden sm:inline-flex text-xs font-semibold text-slate-300 hover:text-gold transition px-2">
+                    Contact
                 </a>
-                <a href="#contact" class="btn-gold-solid px-6 py-2.5 text-xs uppercase tracking-wider flex items-center gap-2 whitespace-nowrap">
-                    <span>Initiate Assessment</span>
+                <a href="#contact" class="btn-gold-solid px-5 py-2 text-xs uppercase tracking-wider flex items-center gap-2 whitespace-nowrap">
+                    <span>Book Assessment</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
                 </a>
+                <!-- Mobile Hamburger Toggle -->
+                <button id="mobileMenuBtn" aria-label="Toggle Navigation" class="md:hidden text-slate-200 hover:text-white p-1.5 rounded-lg border border-gold/30">
+                    <i class="fa-solid fa-bars text-lg" id="menuIcon"></i>
+                </button>
             </div>
-
-            <!-- Mobile Hamburger -->
-            <button id="mobileMenuBtn" aria-label="Toggle Navigation" class="lg:hidden text-slate-200 hover:text-white p-2 rounded-lg border border-gold/30">
-                <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
-            </button>
         </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobileMenu" class="hidden lg:hidden bg-surface/98 border-b border-gold/30 px-6 py-6">
-            <div class="flex flex-col gap-4 text-sm font-medium text-slate-200">
-                <a href="#overview" class="mobile-nav-link hover:text-gold">Transformation</a>
-                <a href="#pillars" class="mobile-nav-link hover:text-gold">Four Pillars</a>
-                <a href="#accelerators" class="mobile-nav-link hover:text-gold">Industry Accelerators</a>
-                <a href="#calculator" class="mobile-nav-link hover:text-gold">ROI Estimator</a>
-                <a href="#roadmap" class="mobile-nav-link hover:text-gold">Sprint Roadmap</a>
-                <a href="#about" class="mobile-nav-link hover:text-gold">About Us</a>
-                <div class="pt-4 border-t border-gold/20 flex flex-col gap-3">
-                    <a href="mailto:contact@anshuai.in" class="text-xs text-slate-300 flex items-center gap-2">
+        <!-- Mobile Drawer Menu -->
+        <div id="mobileMenu" class="hidden md:hidden mt-2 mx-auto max-w-lg rounded-2xl bg-surface/98 backdrop-blur-2xl border border-gold/40 p-5 shadow-2xl transition-all">
+            <div class="flex flex-col gap-3 text-sm font-semibold text-slate-200">
+                <a href="#overview" class="mobile-nav-link p-2 rounded-lg hover:bg-white/5 hover:text-gold transition">Solutions</a>
+                <a href="#accelerators" class="mobile-nav-link p-2 rounded-lg hover:bg-white/5 hover:text-gold transition">Industries</a>
+                <a href="#calculator" class="mobile-nav-link p-2 rounded-lg hover:bg-white/5 hover:text-gold transition">ROI Estimator</a>
+                <a href="#roadmap" class="mobile-nav-link p-2 rounded-lg hover:bg-white/5 hover:text-gold transition">Methodology</a>
+                <a href="#about" class="mobile-nav-link p-2 rounded-lg hover:bg-white/5 hover:text-gold transition">About Us</a>
+                <div class="pt-3 border-t border-gold/20 flex flex-col gap-2">
+                    <a href="mailto:contact@anshuai.in" class="text-xs text-slate-300 flex items-center gap-2 p-1">
                         <i class="fa-regular fa-envelope text-gold"></i>
                         <span>contact@anshuai.in</span>
                     </a>
-                    <a href="#contact" class="btn-gold-solid w-full text-center py-3 text-xs uppercase tracking-wider">
-                        Initiate Assessment
+                    <a href="#contact" class="btn-gold-solid w-full text-center py-2.5 text-xs uppercase tracking-wider">
+                        Book Value Assessment
                     </a>
                 </div>
             </div>
@@ -124,7 +114,7 @@
     </header>
 
     <!-- HERO SECTION (FEATURING Gemini_Generated_Image_qkkzr9qkkzr9qkkz.png) -->
-    <section id="hero" class="relative pt-8 pb-20 lg:pt-12 lg:pb-28 overflow-hidden">
+    <section id="hero" class="relative pt-24 pb-20 lg:pt-28 lg:pb-32 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
             
             <!-- Hero Art Showcase (The Featured Master Artwork) -->

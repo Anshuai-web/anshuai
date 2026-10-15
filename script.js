@@ -30,15 +30,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. Navbar Scroll Shadow Effect
+    // 2. Navbar Scroll Dynamic Shrink Effect
     const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 40) {
-            navbar.classList.add('shadow-xl', 'bg-brand-dark/95', 'border-brand-gold/20');
-        } else {
-            navbar.classList.remove('shadow-xl', 'bg-brand-dark/95', 'border-brand-gold/20');
-        }
-    });
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 30) {
+                navbar.classList.add('py-2');
+                navbar.classList.remove('py-3', 'sm:py-4');
+            } else {
+                navbar.classList.remove('py-2');
+                navbar.classList.add('py-3', 'sm:py-4');
+            }
+        });
+    }
 
     // 3. Industry Accelerators Tab Switcher
     window.switchTab = function(tabName) {
