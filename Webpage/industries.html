@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry Accelerators & Vertical Solutions | AnshuAI</title>
+    <meta name="description" content="Discover AnshuAI's pre-built HeadStart Accelerators for Healthcare, Manufacturing, and FMCG. Deploy certified ServiceNow workflows and enterprise AI in 8–12 weeks.">
+    <link rel="icon" type="image/svg+xml" href="./logo-icon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        deep: '#041619',
+                        surface: '#072328',
+                        gold: '#D4AF37',
+                        goldLight: '#F4E3B2',
+                        goldDark: '#9A7B2C',
+                        teal: '#14B8A6',
+                        tealGlow: '#2DD4BF',
+                        cyan: '#06B6D4'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        heading: ['"Outfit"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="bg-deep text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-gold selection:text-deep">
+
+    <!-- FLOATING NAVIGATION -->
+    <header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 py-3 sm:py-4 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex items-center justify-between h-16 px-5 sm:px-6 rounded-full backdrop-blur-xl bg-[#041619]/90 border border-gold/30 shadow-2xl shadow-black/50">
+            <a href="./index.html" class="flex items-center gap-2.5 group whitespace-nowrap">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-surface to-[#0a3138] border border-gold/50 flex items-center justify-center p-1 shadow-md shadow-teal/10 group-hover:border-gold transition">
+                    <img src="./logo-icon.svg" alt="AnshuAI Emblem" class="w-full h-full object-contain">
+                </div>
+                <span class="text-xl sm:text-2xl font-extrabold tracking-tight font-heading text-white">
+                    Anshu<span class="text-gold">AI</span>
+                </span>
+            </a>
+            <nav class="hidden md:flex items-center gap-1 bg-white/[0.03] p-1 rounded-full border border-white/[0.06]">
+                <a href="./index.html" class="px-4 py-1.5 text-xs font-semibold text-slate-300 hover:text-white hover:bg-white/[0.08] rounded-full transition whitespace-nowrap">Home</a>
+                <a href="./solutions.html" class="px-4 py-1.5 text-xs font-semibold text-slate-300 hover:text-white hover:bg-white/[0.08] rounded-full transition whitespace-nowrap">Solutions</a>
+                <a href="./industries.html" class="px-4 py-1.5 text-xs font-semibold text-gold bg-white/[0.08] rounded-full transition whitespace-nowrap">Industries</a>
+                <a href="./calculator.html" class="px-4 py-1.5 text-xs font-semibold text-slate-300 hover:text-white hover:bg-white/[0.08] rounded-full transition whitespace-nowrap">ROI Estimator</a>
+                <a href="./methodology.html" class="px-4 py-1.5 text-xs font-semibold text-slate-300 hover:text-white hover:bg-white/[0.08] rounded-full transition whitespace-nowrap">Methodology</a>
+                <a href="./about.html" class="px-4 py-1.5 text-xs font-semibold text-slate-300 hover:text-white hover:bg-white/[0.08] rounded-full transition whitespace-nowrap">About</a>
+            </nav>
+            <div class="flex items-center gap-2 sm:gap-4">
+                <a href="./contact.html" class="hidden sm:inline-flex text-xs font-semibold text-slate-300 hover:text-gold transition px-2">Contact</a>
+                <a href="./contact.html" class="btn-gold-solid px-5 py-2 text-xs uppercase tracking-wider flex items-center gap-2 whitespace-nowrap">
+                    <span>Book Assessment</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+                <button id="mobileMenuBtn" aria-label="Toggle Navigation" class="md:hidden text-slate-200 hover:text-white p-1.5 rounded-lg border border-gold/30">
+                    <i class="fa-solid fa-bars text-lg" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden mt-2 mx-auto max-w-lg rounded-2xl bg-surface/98 backdrop-blur-2xl border border-gold/40 p-5 shadow-2xl transition-all">
+            <div class="flex flex-col gap-3 text-sm font-semibold text-slate-200">
+                <a href="./index.html" class="mobile-nav-link p-2 rounded-lg hover:bg-white/5 hover:text-gold transition">Home</a>
+                <a href="./solutions.html" class="mobile-nav-link p-2 rounded-lg hover:bg-white/5 hover:text-gold transition">Solutions</a>
+                <a href="./industries.html" class="mobile-nav-link p-2 rounded-lg text-gold bg-white/5">Industries</a>
+                <a href="./calculator.html" class="mobile-nav-link p-2 rounded-lg hover:bg-white/5 hover:text-gold transition">ROI Estimator</a>
+                <a href="./methodology.html" class="mobile-nav-link p-2 rounded-lg hover:bg-white/5 hover:text-gold transition">Methodology</a>
+                <a href="./about.html" class="mobile-nav-link p-2 rounded-lg hover:bg-white/5 hover:text-gold transition">About Us</a>
+                <div class="pt-3 border-t border-gold/20 flex flex-col gap-2">
+                    <a href="./contact.html" class="btn-gold-solid w-full text-center py-2.5 text-xs uppercase tracking-wider">Book Value Assessment</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="pt-32 pb-16 lg:pt-36 lg:pb-20 border-b border-gold/20 bg-gradient-to-b from-surface/50 to-deep">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface border border-gold/40 text-xs font-semibold text-goldLight">
+                <i class="fa-solid fa-industry text-gold"></i>
+                <span>Vertical HeadStart Accelerators</span>
+            </div>
+            <h1 class="text-4xl sm:text-5xl font-extrabold font-heading text-white">
+                Engineered for Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold via-goldLight to-white">Industry Reality</span>
+            </h1>
+            <p class="text-slate-300 text-base max-w-2xl mx-auto leading-relaxed">
+                Pre-configured data schemas, regulatory compliance wrappers, and certified ServiceNow workflows designed to deploy in 8–12 weeks.
+            </p>
+            <div class="flex flex-wrap justify-center gap-3 pt-4">
+                <a href="#healthcare" class="px-4 py-2 rounded-full border border-gold/30 bg-surface/70 text-xs font-semibold text-slate-200 hover:text-gold hover:border-gold transition">
+                    <i class="fa-solid fa-heart-pulse text-gold mr-1.5"></i> Healthcare Agility
+                </a>
+                <a href="#manufacturing" class="px-4 py-2 rounded-full border border-gold/30 bg-surface/70 text-xs font-semibold text-slate-200 hover:text-gold hover:border-gold transition">
+                    <i class="fa-solid fa-gears text-gold mr-1.5"></i> Manufacturing Asset Health
+                </a>
+                <a href="#fmcg" class="px-4 py-2 rounded-full border border-gold/30 bg-surface/70 text-xs font-semibold text-slate-200 hover:text-gold hover:border-gold transition">
+                    <i class="fa-solid fa-boxes-packing text-gold mr-1.5"></i> FMCG Supply Chain Precision
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- INDUSTRY 1: HEALTHCARE AGILITY -->
+    <section id="healthcare" class="py-20 border-b border-gold/20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div class="space-y-3 max-w-2xl">
+                    <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gold">
+                        <i class="fa-solid fa-hospital"></i> Vertical 01 &bull; Clinical & Hospital Networks
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white">
+                        Healthcare Operational Agility
+                    </h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Clinicians should spend their days caring for patients, not battling legacy ticketing systems or waiting for medical equipment dispatch. AnshuAI bridges ServiceNow Healthcare & Life Sciences with FHIR/HL7 standard data models.
+                    </p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="px-3.5 py-1.5 rounded-full bg-surface border border-gold/40 text-xs font-semibold text-goldLight">
+                        HIPAA & HITECH Compliant
+                    </span>
+                    <a href="./calculator.html" class="btn-gold-pill px-4 py-1.5 text-xs">Estimate Yield</a>
+                </div>
+            </div>
+
+            <!-- 3 Column Capabilities -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="theme-card rounded-2xl p-6 space-y-4">
+                    <div class="w-10 h-10 rounded-xl bg-gold/10 border border-gold/40 flex items-center justify-center text-gold text-lg">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white font-heading">EHR / EMR FHIR Gateway</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Bi-directional synchronization between Epic, Cerner, and ServiceNow. Clinicians log clinical IT or facilities issues directly from the electronic record without context switching.
+                    </p>
+                    <div class="text-[11px] text-goldLight font-mono">Restricted FHIR API v4.0</div>
+                </div>
+
+                <div class="theme-card rounded-2xl p-6 space-y-4">
+                    <div class="w-10 h-10 rounded-xl bg-teal/10 border border-teal/40 flex items-center justify-center text-tealGlow text-lg">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white font-heading">Biomedical Asset Telemetry</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Automated work-order generation when MRI, infusion pumps, or ventilators flag error codes. Dispatches biomedical engineers with complete calibration histories.
+                    </p>
+                    <div class="text-[11px] text-tealGlow font-mono">Automated FSM Dispatch</div>
+                </div>
+
+                <div class="theme-card rounded-2xl p-6 space-y-4">
+                    <div class="w-10 h-10 rounded-xl bg-cyan/10 border border-cyan/40 flex items-center justify-center text-cyan text-lg">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white font-heading">Zero-PHI Sovereign Triage</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Our private NLP engines redact protected health information (PHI) at the browser edge before routing inquiries to hospital administration or IT queues.
+                    </p>
+                    <div class="text-[11px] text-cyan font-mono">100% Data Sovereignty</div>
+                </div>
+            </div>
+
+            <!-- Quantified Metrics Bar -->
+            <div class="rounded-2xl bg-surface/80 border border-gold/30 p-6 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                <div class="space-y-1">
+                    <div class="text-3xl font-extrabold text-gold font-heading">30–40%</div>
+                    <div class="text-xs text-slate-300 font-medium">Faster Clinical Incident Resolution</div>
+                </div>
+                <div class="space-y-1 border-y sm:border-y-0 sm:border-x border-gold/20 py-4 sm:py-0">
+                    <div class="text-3xl font-extrabold text-tealGlow font-heading">1,000+</div>
+                    <div class="text-xs text-slate-300 font-medium">Clinician Administrative Hours Reclaimed</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-3xl font-extrabold text-white font-heading">100%</div>
+                    <div class="text-xs text-slate-300 font-medium">Audit Compliance Across Joint Commission Reviews</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INDUSTRY 2: MANUFACTURING ASSET HEALTH -->
+    <section id="manufacturing" class="py-20 border-b border-gold/20 bg-surface/20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div class="space-y-3 max-w-2xl">
+                    <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-tealGlow">
+                        <i class="fa-solid fa-industry"></i> Vertical 02 &bull; Industrial & Discrete Manufacturing
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white">
+                        Manufacturing Asset Health & FSM
+                    </h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Unplanned production downtime costs tier-1 manufacturers up to $260,000 per hour. AnshuAI converges OT telemetry with ServiceNow Field Service Management (FSM) to resolve machine anomalies before line stoppages occur.
+                    </p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="px-3.5 py-1.5 rounded-full bg-surface border border-teal/40 text-xs font-semibold text-tealGlow">
+                        OT / IT Convergence
+                    </span>
+                    <a href="./calculator.html" class="btn-gold-pill px-4 py-1.5 text-xs">Estimate Yield</a>
+                </div>
+            </div>
+
+            <!-- 3 Column Capabilities -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="theme-card rounded-2xl p-6 space-y-4">
+                    <div class="w-10 h-10 rounded-xl bg-teal/10 border border-teal/40 flex items-center justify-center text-tealGlow text-lg">
+                        <i class="fa-solid fa-tower-broadcast"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white font-heading">SCADA & IoT Ingestion</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Ingests sensor streams from Siemens, Rockwell, and MQTT brokers. High-frequency anomaly detection filters out sensor noise and flags genuine mechanical degradation.
+                    </p>
+                    <div class="text-[11px] text-tealGlow font-mono">OPC-UA & MQTT Protocols</div>
+                </div>
+
+                <div class="theme-card rounded-2xl p-6 space-y-4">
+                    <div class="w-10 h-10 rounded-xl bg-gold/10 border border-gold/40 flex items-center justify-center text-gold text-lg">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white font-heading">Intelligent Field Dispatch</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Dynamic routing based on technician certifications, proximity, and spare parts inventory availability in real-time, eliminating repeat truck rolls.
+                    </p>
+                    <div class="text-[11px] text-goldLight font-mono">ServiceNow FSM Dynamic Routing</div>
+                </div>
+
+                <div class="theme-card rounded-2xl p-6 space-y-4">
+                    <div class="w-10 h-10 rounded-xl bg-cyan/10 border border-cyan/40 flex items-center justify-center text-cyan text-lg">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white font-heading">SAP ERP Sync & Parts Allocation</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Direct Integration Hub integration into SAP Plant Maintenance (PM) ensuring work orders allocate necessary replacement components before maintenance windows begin.
+                    </p>
+                    <div class="text-[11px] text-cyan font-mono">Zero-Latency SAP BAPI Sync</div>
+                </div>
+            </div>
+
+            <!-- Quantified Metrics Bar -->
+            <div class="rounded-2xl bg-surface/80 border border-teal/30 p-6 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                <div class="space-y-1">
+                    <div class="text-3xl font-extrabold text-tealGlow font-heading">25%</div>
+                    <div class="text-xs text-slate-300 font-medium">Reduction in Unplanned Assembly Downtime</div>
+                </div>
+                <div class="space-y-1 border-y sm:border-y-0 sm:border-x border-teal/20 py-4 sm:py-0">
+                    <div class="text-3xl font-extrabold text-gold font-heading">40%</div>
+                    <div class="text-xs text-slate-300 font-medium">Faster Mean Time to Repair (MTTR)</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-3xl font-extrabold text-white font-heading">18%</div>
+                    <div class="text-xs text-slate-300 font-medium">Higher First-Time Fix Rates (FTFR)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INDUSTRY 3: FMCG & RETAIL -->
+    <section id="fmcg" class="py-20 border-b border-gold/20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div class="space-y-3 max-w-2xl">
+                    <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gold">
+                        <i class="fa-solid fa-cart-shopping"></i> Vertical 03 &bull; Fast-Moving Consumer Goods & Retail
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white">
+                        FMCG Inventory & Supply Chain Precision
+                    </h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        In high-velocity consumer goods, a delayed shipment or stockout directly damages retailer shelf relationships. AnshuAI unifies supplier collaboration, claims management, and warehouse inventory sync into ServiceNow CSM.
+                    </p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="px-3.5 py-1.5 rounded-full bg-surface border border-gold/40 text-xs font-semibold text-goldLight">
+                        Omni-Channel Operations
+                    </span>
+                    <a href="./calculator.html" class="btn-gold-pill px-4 py-1.5 text-xs">Estimate Yield</a>
+                </div>
+            </div>
+
+            <!-- 3 Column Capabilities -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="theme-card rounded-2xl p-6 space-y-4">
+                    <div class="w-10 h-10 rounded-xl bg-gold/10 border border-gold/40 flex items-center justify-center text-gold text-lg">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white font-heading">Automated Supplier Dispute Triage</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        NLP ingestion extracts purchase order numbers, bill of lading deviations, and shortage claims from incoming supplier emails, reconciling records against Oracle and WMS.
+                    </p>
+                    <div class="text-[11px] text-goldLight font-mono">Automated Reconciliation</div>
+                </div>
+
+                <div class="theme-card rounded-2xl p-6 space-y-4">
+                    <div class="w-10 h-10 rounded-xl bg-teal/10 border border-teal/40 flex items-center justify-center text-tealGlow text-lg">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white font-heading">Stockout Early Warning</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Predictive algorithms correlate Point of Sale (POS) sell-through velocity with distribution center stock to generate preventative replenishment workflows.
+                    </p>
+                    <div class="text-[11px] text-tealGlow font-mono">Predictive Stock Orchestration</div>
+                </div>
+
+                <div class="theme-card rounded-2xl p-6 space-y-4">
+                    <div class="w-10 h-10 rounded-xl bg-cyan/10 border border-cyan/40 flex items-center justify-center text-cyan text-lg">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white font-heading">Retailer Self-Service Portals</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        High-volume retailers query delivery ETAs, track return merchandise authorizations (RMA), and retrieve compliance certificates through branded ServiceNow self-service.
+                    </p>
+                    <div class="text-[11px] text-cyan font-mono">ServiceNow CSM Multi-Channel</div>
+                </div>
+            </div>
+
+            <!-- Quantified Metrics Bar -->
+            <div class="rounded-2xl bg-surface/80 border border-gold/30 p-6 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                <div class="space-y-1">
+                    <div class="text-3xl font-extrabold text-gold font-heading">20–30%</div>
+                    <div class="text-xs text-slate-300 font-medium">Reduction in Stockout Incidents</div>
+                </div>
+                <div class="space-y-1 border-y sm:border-y-0 sm:border-x border-gold/20 py-4 sm:py-0">
+                    <div class="text-3xl font-extrabold text-tealGlow font-heading">50%</div>
+                    <div class="text-xs text-slate-300 font-medium">Faster Supplier Claim Reconciliation</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-3xl font-extrabold text-white font-heading">35%</div>
+                    <div class="text-xs text-slate-300 font-medium">Customer Support Deflection via AI Portals</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="py-20 relative bg-surface/30">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <span class="text-xs font-bold uppercase tracking-widest text-gold">8–12 Week Velocity Guarantee</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white">
+                Deploy an Industry Accelerator for Your Enterprise
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+                Skip standard 18-month legacy consulting delays. Let our Certified Technical Architects conduct a zero-risk 48-hour feasibility review of your architecture.
+            </p>
+            <div class="pt-4 flex flex-wrap justify-center gap-4">
+                <a href="./contact.html" class="btn-gold-solid px-8 py-3.5 text-xs sm:text-sm uppercase tracking-wider flex items-center gap-2">
+                    <span>Schedule Feasibility Review</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+                <a href="./calculator.html" class="btn-teal-pill px-7 py-3.5 text-xs sm:text-sm font-semibold flex items-center gap-2">
+                    <i class="fa-solid fa-calculator text-tealGlow"></i>
+                    <span>Calculate ROI Savings</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-deep border-t border-gold/25 pt-16 pb-12 text-slate-400 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-gold/20">
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center rounded-xl bg-surface border border-gold/40 p-1">
+                            <img src="./logo-icon.svg" alt="AnshuAI Logo" class="w-full h-full object-contain">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-2xl font-extrabold tracking-tight font-heading text-white">Anshu<span class="text-gold">AI</span></span>
+                            <span class="text-[10px] font-bold tracking-[0.2em] text-goldLight uppercase -mt-0.5">Intelligence Illuminated</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-300 max-w-sm leading-relaxed">
+                        AnshuAI is an enterprise technology consultancy accelerating digital transformation by coupling deep ServiceNow architectural mastery with bespoke enterprise artificial intelligence.
+                    </p>
+                    <div class="text-[11px] text-gold font-semibold">
+                        Official Domain: <strong>anshuai.in</strong>
+                    </div>
+                </div>
+
+                <div class="space-y-3">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white">Solutions</h4>
+                    <ul class="space-y-2">
+                        <li><a href="./solutions.html#servicenow" class="hover:text-gold transition">ServiceNow Mastery</a></li>
+                        <li><a href="./solutions.html#ai" class="hover:text-gold transition">Bespoke Enterprise AI</a></li>
+                        <li><a href="./solutions.html#automation" class="hover:text-gold transition">Autonomous Automation</a></li>
+                        <li><a href="./solutions.html#accelerators" class="hover:text-gold transition">HeadStart Packages</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-3">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white">Industries</h4>
+                    <ul class="space-y-2">
+                        <li><a href="./industries.html#healthcare" class="text-gold font-semibold">Healthcare Agility</a></li>
+                        <li><a href="./industries.html#manufacturing" class="hover:text-gold transition">Manufacturing Asset Health</a></li>
+                        <li><a href="./industries.html#fmcg" class="hover:text-gold transition">FMCG Inventory Precision</a></li>
+                        <li><a href="./methodology.html" class="hover:text-gold transition">8–12 Week Sprints</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-3">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="./about.html" class="hover:text-gold transition">About AnshuAI</a></li>
+                        <li><a href="./calculator.html" class="hover:text-gold transition">ROI Yield Estimator</a></li>
+                        <li><a href="./methodology.html" class="hover:text-gold transition">Sprint Roadmap</a></li>
+                        <li><a href="./contact.html" class="hover:text-gold transition">Book Assessment</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
+                <p>&copy; 2026 AnshuAI Technologies Pvt. Ltd. All rights reserved. Registered domain: <strong>anshuai.in</strong></p>
+                <div class="flex items-center gap-6">
+                    <a href="./about.html" class="hover:text-slate-200 transition">Security & Compliance</a>
+                    <a href="./contact.html" class="hover:text-slate-200 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
