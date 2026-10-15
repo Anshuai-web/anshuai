@@ -64,7 +64,7 @@ Add the following records:
 
 ---
 
-## 4. Setting Up Corporate Email (`contact@anshuai.in`)
+## 4. Setting Up Corporate Email (`Anshu@anshuai.in`)
 
 To activate business email on Google Workspace (Gmail) for `anshuai.in`:
 1. In Google Domains / Squarespace DNS, navigate to **Email** or **Custom Records**.
