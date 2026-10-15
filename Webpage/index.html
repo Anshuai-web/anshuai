@@ -50,7 +50,34 @@
     </script>
 
     <!-- Custom Theme CSS -->
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css?v=3">
+    <style>
+        .explore-solutions-overlay {
+            position: absolute;
+            left: 82.1%;
+            top: 45.8%;
+            width: 15.2%;
+            height: 8.4%;
+            border-radius: 9999px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            background-color: transparent;
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+            display: block;
+            z-index: 30;
+        }
+        .explore-solutions-overlay:hover,
+        .explore-solutions-overlay:focus-visible {
+            border-color: #F4E3B2 !important;
+            background-color: rgba(212, 175, 55, 0.25) !important;
+            box-shadow: 0 0 25px 4px rgba(212, 175, 55, 0.75), inset 0 0 15px rgba(212, 175, 55, 0.4) !important;
+            transform: scale(1.03);
+        }
+        .explore-solutions-overlay:active {
+            transform: scale(0.97);
+            background-color: rgba(212, 175, 55, 0.45) !important;
+        }
+    </style>
 </head>
 <body class="bg-deep text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-gold selection:text-deep">
 
@@ -120,18 +147,21 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
             
             <!-- Hero Art Showcase (Featured Master Artwork) -->
-            <div class="relative rounded-3xl overflow-hidden hero-art-frame bg-surface shadow-2xl">
+            <div class="relative rounded-3xl overflow-hidden hero-art-frame bg-surface shadow-2xl group transition-all duration-700 hover:shadow-gold/25">
                 <img src="./Gemini_Generated_Image_qkkzr9qkkzr9qkkz.png" 
                      alt="AnshuAI Intelligence Illuminated — Enterprise AI & ServiceNow Transformation" 
-                     class="w-full h-auto block select-none"
+                     class="w-full h-auto block select-none transition-transform duration-700 group-hover:scale-[1.008]"
                      width="3168"
                      height="1344">
                 
-                <!-- Pixel-Aligned Clickable Overlay for "Explore Solutions" Button -->
+                <!-- Pixel-Aligned Clickable & Hoverable Overlay for "Explore Solutions" Button -->
                 <a href="./solutions.html" 
+                   onclick="window.location.href='./solutions.html';"
                    aria-label="Explore Solutions" 
                    class="explore-solutions-overlay"
-                   title="Click to Explore Solutions">
+                   title="Click to Explore Solutions"
+                   style="position: absolute; left: 82.1%; top: 45.8%; width: 15.2%; height: 8.4%; border-radius: 9999px; cursor: pointer; z-index: 30;">
+                   <span class="sr-only">Explore Solutions</span>
                 </a>
             </div>
 
@@ -214,7 +244,7 @@
     </section>
 
     <!-- HOMEPAGE SECTION: SOLUTIONS PREVIEW (Links to solutions.html) -->
-    <section class="py-24 relative">
+    <section id="solutions" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
                 <div>

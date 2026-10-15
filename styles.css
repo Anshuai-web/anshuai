@@ -150,22 +150,29 @@ input[type=range] {
 /* Hero Banner "Explore Solutions" Interactive Overlay */
 .explore-solutions-overlay {
   position: absolute;
-  left: 82.32%;
-  top: 46.06%;
-  width: 14.80%;
-  height: 7.89%;
+  left: 82.1%;
+  top: 45.8%;
+  width: 15.2%;
+  height: 8.4%;
   border-radius: 9999px;
   cursor: pointer;
   border: 2px solid transparent;
+  background-color: transparent;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   display: block;
-  z-index: 20;
+  z-index: 30;
 }
 
 .explore-solutions-overlay:hover,
 .explore-solutions-overlay:focus-visible {
-  border-color: rgba(244, 227, 178, 0.95);
-  background-color: rgba(212, 175, 55, 0.18);
-  box-shadow: 0 0 22px 3px rgba(212, 175, 55, 0.6), inset 0 0 12px rgba(212, 175, 55, 0.3);
+  border-color: #F4E3B2 !important;
+  background-color: rgba(212, 175, 55, 0.25) !important;
+  box-shadow: 0 0 25px 4px rgba(212, 175, 55, 0.75), inset 0 0 15px rgba(212, 175, 55, 0.4) !important;
+  transform: scale(1.03);
+}
+
+.explore-solutions-overlay:active {
+  transform: scale(0.97);
+  background-color: rgba(212, 175, 55, 0.45) !important;
 }
 
