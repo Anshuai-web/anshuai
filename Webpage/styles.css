@@ -1,22 +1,29 @@
 /* ==========================================================================
-   AnshuAI (anshuai.in) — Executive Enterprise Design System
-   Color Palette: Deep Obsidian (#080b0e), Smoky Slate (#10161f),
-   Champagne Gold (#C5A059 / #D4AF37), Radiant Teal (#14B8A6)
+   AnshuAI (anshuai.in) — Kinetic Teal & Solar Gold Executive Theme
+   Harmonized with Gemini_Generated_Image_qkkzr9qkkzr9qkkz.png
    ========================================================================== */
 
 :root {
-  --bg-dark: #070a0d;
-  --bg-surface: #0c1117;
-  --bg-card: rgba(16, 23, 32, 0.75);
-  --bg-card-hover: rgba(22, 32, 45, 0.9);
-  --border-subtle: rgba(255, 255, 255, 0.07);
-  --border-gold: rgba(197, 160, 89, 0.35);
-  --gold-primary: #C5A059;
-  --gold-light: #F2D492;
-  --gold-dark: #8C6B26;
-  --teal-accent: #14B8A6;
-  --cyan-glow: #38BDF8;
-  --text-main: #F1F5F9;
+  --bg-deep: #041619;
+  --bg-surface: #072328;
+  --bg-card: rgba(8, 36, 41, 0.82);
+  --bg-card-hover: rgba(12, 47, 54, 0.95);
+  
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-gold: rgba(212, 175, 55, 0.35);
+  --border-gold-bright: rgba(212, 175, 55, 0.7);
+  --border-teal: rgba(20, 184, 166, 0.35);
+
+  --gold-primary: #D4AF37;
+  --gold-light: #F4E3B2;
+  --gold-dark: #9A7B2C;
+  --gold-glow: rgba(212, 175, 55, 0.25);
+
+  --teal-primary: #14B8A6;
+  --teal-glow: #2DD4BF;
+  --cyan-primary: #06B6D4;
+
+  --text-primary: #F8FAFC;
   --text-muted: #94A3B8;
   --text-dim: #64748B;
 }
@@ -27,100 +34,115 @@ html {
 }
 
 body {
-  background-color: var(--bg-dark);
-  color: var(--text-main);
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
   background-image: 
-    radial-gradient(circle at 50% 0%, rgba(197, 160, 89, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(20, 184, 166, 0.05) 0%, transparent 40%),
-    radial-gradient(circle at 10% 40%, rgba(56, 189, 248, 0.04) 0%, transparent 40%);
+    radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 85% 15%, rgba(20, 184, 166, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 15% 45%, rgba(6, 182, 212, 0.06) 0%, transparent 35%);
   background-attachment: fixed;
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #070a0d;
+  background: #041619;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1b2430;
+  background: #0d3a40;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #C5A059;
+  background: #D4AF37;
 }
 
-/* Glassmorphism Card Style */
-.glass-card {
+/* Theme Cards */
+.theme-card {
   background: var(--bg-card);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid var(--border-subtle);
+  border: 1px solid var(--border-gold);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.glass-card:hover {
+.theme-card:hover {
   background: var(--bg-card-hover);
-  border-color: var(--border-gold);
+  border-color: var(--border-gold-bright);
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px -5px rgba(197, 160, 89, 0.15);
+  box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.6), 0 0 25px -5px rgba(212, 175, 55, 0.25);
 }
 
-/* Luxury Gold Gradient Button */
-.btn-gold {
-  background: linear-gradient(135deg, #E6C67E 0%, #C5A059 50%, #9E7A2E 100%);
-  color: #070a0d;
+/* Luxury Gold Pill Button (Styled like "EXPLORE SOLUTIONS" in the Hero Artwork) */
+.btn-gold-pill {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(212, 175, 55, 0.05) 100%);
+  border: 1.5px solid var(--gold-primary);
+  color: var(--gold-light);
   font-weight: 700;
-  letter-spacing: 0.03em;
-  box-shadow: 0 4px 20px rgba(197, 160, 89, 0.25);
+  letter-spacing: 0.06em;
+  border-radius: 9999px;
+  box-shadow: 0 4px 18px var(--gold-glow);
   transition: all 0.25s ease;
 }
 
-.btn-gold:hover {
-  background: linear-gradient(135deg, #F5DC9A 0%, #D4AF37 50%, #AA8433 100%);
-  box-shadow: 0 6px 25px rgba(197, 160, 89, 0.4);
+.btn-gold-pill:hover {
+  background: linear-gradient(135deg, #F4E3B2 0%, #D4AF37 50%, #B8922C 100%);
+  color: #041619;
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.45);
   transform: translateY(-1px);
 }
 
-.btn-secondary {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #E2E8F0;
+.btn-gold-solid {
+  background: linear-gradient(135deg, #F4E3B2 0%, #D4AF37 50%, #B8922C 100%);
+  color: #041619;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border-radius: 9999px;
+  box-shadow: 0 4px 20px var(--gold-glow);
   transition: all 0.25s ease;
 }
 
-.btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(197, 160, 89, 0.4);
+.btn-gold-solid:hover {
+  background: linear-gradient(135deg, #FFF0C8 0%, #E2BE4A 50%, #CA9F35 100%);
+  box-shadow: 0 6px 28px rgba(212, 175, 55, 0.55);
+  transform: translateY(-1px);
+}
+
+.btn-teal-pill {
+  background: rgba(20, 184, 166, 0.1);
+  border: 1.5px solid rgba(20, 184, 166, 0.4);
+  color: #E2E8F0;
+  border-radius: 9999px;
+  transition: all 0.25s ease;
+}
+
+.btn-teal-pill:hover {
+  background: rgba(20, 184, 166, 0.2);
+  border-color: var(--teal-primary);
   color: #FFFFFF;
 }
 
-/* Tab Switcher */
-.tab-btn {
+/* Industry Tabs */
+.industry-tab {
   color: #94A3B8;
   border-bottom: 2px solid transparent;
   transition: all 0.2s ease;
 }
 
-.tab-btn.active {
-  color: #C5A059;
-  border-bottom: 2px solid #C5A059;
-  background: rgba(197, 160, 89, 0.06);
-}
-
-/* Command Center UI Live Pulse */
-@keyframes beaconPulse {
-  0% { transform: scale(0.95); opacity: 0.8; }
-  50% { transform: scale(1.15); opacity: 0.3; }
-  100% { transform: scale(0.95); opacity: 0.8; }
-}
-
-.pulse-beacon {
-  animation: beaconPulse 2.5s infinite;
+.industry-tab.active {
+  color: var(--gold-primary);
+  border-bottom: 2px solid var(--gold-primary);
+  background: rgba(212, 175, 55, 0.08);
 }
 
 /* Input Range Styling */
 input[type=range] {
-  accent-color: #C5A059;
+  accent-color: var(--gold-primary);
+}
+
+/* Hero Showcase Frame */
+.hero-art-frame {
+  border: 1.5px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8), 0 0 35px -5px rgba(20, 184, 166, 0.25);
 }

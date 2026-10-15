@@ -13,7 +13,7 @@
     <meta property="og:description" content="Accelerating Enterprise Business Transformation through ServiceNow Excellence & Bespoke AI.">
     <meta property="og:url" content="https://anshuai.in">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="./logo.svg">
+    <meta property="og:image" content="./Gemini_Generated_Image_qkkzr9qkkzr9qkkz.png">
     <link rel="icon" type="image/svg+xml" href="./logo-icon.svg">
 
     <!-- Google Fonts -->
@@ -31,14 +31,14 @@
             theme: {
                 extend: {
                     colors: {
-                        dark: '#070a0d',
-                        surface: '#0c1117',
-                        card: 'rgba(16, 23, 32, 0.75)',
-                        gold: '#C5A059',
-                        goldLight: '#F2D492',
-                        goldDark: '#8C6B26',
+                        deep: '#041619',
+                        surface: '#072328',
+                        gold: '#D4AF37',
+                        goldLight: '#F4E3B2',
+                        goldDark: '#9A7B2C',
                         teal: '#14B8A6',
-                        cyan: '#38BDF8'
+                        tealGlow: '#2DD4BF',
+                        cyan: '#06B6D4'
                     },
                     fontFamily: {
                         sans: ['"Plus Jakarta Sans"', 'sans-serif'],
@@ -49,31 +49,41 @@
         }
     </script>
 
-    <!-- Custom CSS -->
+    <!-- Custom Theme CSS -->
     <link rel="stylesheet" href="./styles.css">
 </head>
-<body class="bg-dark text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-gold selection:text-dark">
+<body class="bg-deep text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-gold selection:text-deep">
 
     <!-- TOP ANNOUNCEMENT TICKER -->
-    <aside aria-label="Announcement" class="bg-gradient-to-r from-surface via-[#131b24] to-surface border-b border-white/[0.08] text-xs py-2.5 px-4 text-center">
+    <aside aria-label="Announcement" class="bg-gradient-to-r from-surface via-[#0a3138] to-surface border-b border-gold/30 text-xs py-2.5 px-4 text-center">
         <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span class="text-gold font-semibold">HeadStart Accelerators:</span>
-            <span class="text-slate-300 hidden sm:inline">Deploy pre-built ServiceNow workflows and bespoke AI in 8 to 12 weeks.</span>
-            <a href="#accelerators" class="text-goldLight underline font-medium hover:text-white transition ml-1">Explore Solutions &rarr;</a>
+            <span class="text-gold font-bold">AnshuAI HeadStart Accelerators:</span>
+            <span class="text-slate-300 hidden sm:inline">Pre-configured ServiceNow & Bespoke AI templates deployed in 8 to 12 weeks.</span>
+            <a href="#accelerators" class="text-goldLight underline font-semibold hover:text-white transition ml-1">Explore Solutions &rarr;</a>
         </div>
     </aside>
 
     <!-- MAIN EXECUTIVE NAVIGATION -->
-    <header id="navbar" class="sticky top-0 z-50 backdrop-blur-xl bg-dark/90 border-b border-white/[0.08] transition duration-300">
+    <header id="navbar" class="sticky top-0 z-50 backdrop-blur-xl bg-[#041619]/95 border-b border-gold/30 transition duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Brand Logo -->
-            <a href="#hero" class="flex items-center gap-3">
-                <img src="./logo.svg" alt="AnshuAI Logo" class="h-11 w-auto object-contain">
+            <!-- Brand Logo (Large, Bold & 100% Readable) -->
+            <a href="#hero" class="flex items-center gap-3.5 group">
+                <div class="w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-xl bg-gradient-to-br from-surface to-[#0a3138] border border-gold/40 shadow-lg shadow-teal/10 group-hover:border-gold transition duration-300 p-1">
+                    <img src="./logo-icon.svg" alt="AnshuAI Emblem" class="w-full h-full object-contain">
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-2xl sm:text-3xl font-extrabold tracking-tight font-heading text-white leading-none">
+                        Anshu<span class="text-gold">AI</span>
+                    </span>
+                    <span class="text-[10px] sm:text-[11px] font-bold tracking-[0.24em] text-goldLight uppercase mt-1 leading-none">
+                        Intelligence Illuminated
+                    </span>
+                </div>
             </a>
 
             <!-- Desktop Nav Links -->
-            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-200">
                 <a href="#overview" class="hover:text-gold transition">Transformation</a>
                 <a href="#pillars" class="hover:text-gold transition">Four Pillars</a>
                 <a href="#accelerators" class="hover:text-gold transition">Accelerators</a>
@@ -84,24 +94,24 @@
 
             <!-- Actions -->
             <div class="hidden sm:flex items-center gap-5">
-                <a href="mailto:contact@anshuai.in" class="text-xs text-slate-400 hover:text-white flex items-center gap-2 transition">
+                <a href="mailto:contact@anshuai.in" class="text-xs text-slate-300 hover:text-white flex items-center gap-2 transition font-medium">
                     <i class="fa-regular fa-envelope text-gold"></i>
                     <span>contact@anshuai.in</span>
                 </a>
-                <a href="#contact" class="btn-gold px-5 py-2.5 rounded-lg text-xs uppercase tracking-wider flex items-center gap-2">
+                <a href="#contact" class="btn-gold-solid px-6 py-2.5 text-xs uppercase tracking-wider flex items-center gap-2">
                     <span>Initiate Assessment</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
                 </a>
             </div>
 
             <!-- Mobile Hamburger -->
-            <button id="mobileMenuBtn" aria-label="Toggle Navigation" class="lg:hidden text-slate-300 hover:text-white p-2 rounded-lg border border-white/10">
-                <i class="fa-solid fa-bars text-lg" id="menuIcon"></i>
+            <button id="mobileMenuBtn" aria-label="Toggle Navigation" class="lg:hidden text-slate-200 hover:text-white p-2 rounded-lg border border-gold/30">
+                <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
             </button>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobileMenu" class="hidden lg:hidden bg-surface/98 border-b border-white/10 px-6 py-6">
+        <div id="mobileMenu" class="hidden lg:hidden bg-surface/98 border-b border-gold/30 px-6 py-6">
             <div class="flex flex-col gap-4 text-sm font-medium text-slate-200">
                 <a href="#overview" class="mobile-nav-link hover:text-gold">Transformation</a>
                 <a href="#pillars" class="mobile-nav-link hover:text-gold">Four Pillars</a>
@@ -109,8 +119,12 @@
                 <a href="#calculator" class="mobile-nav-link hover:text-gold">ROI Estimator</a>
                 <a href="#roadmap" class="mobile-nav-link hover:text-gold">Sprint Roadmap</a>
                 <a href="#about" class="mobile-nav-link hover:text-gold">About Us</a>
-                <div class="pt-4 border-t border-white/10 flex flex-col gap-3">
-                    <a href="#contact" class="btn-gold w-full text-center py-3 rounded-lg text-xs uppercase tracking-wider">
+                <div class="pt-4 border-t border-gold/20 flex flex-col gap-3">
+                    <a href="mailto:contact@anshuai.in" class="text-xs text-slate-300 flex items-center gap-2">
+                        <i class="fa-regular fa-envelope text-gold"></i>
+                        <span>contact@anshuai.in</span>
+                    </a>
+                    <a href="#contact" class="btn-gold-solid w-full text-center py-3 text-xs uppercase tracking-wider">
                         Initiate Assessment
                     </a>
                 </div>
@@ -118,130 +132,98 @@
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section id="hero" class="relative pt-12 pb-24 lg:pt-20 lg:pb-32 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-                <!-- Left: Authoritative Value Proposition -->
-                <div class="lg:col-span-7 space-y-7">
-                    <!-- Status Pill -->
-                    <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-gold/30 text-xs font-semibold text-goldLight">
-                        <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-beacon"></span>
-                        <span>ServiceNow Certified Technical Architect (CTA) Practice</span>
+    <!-- HERO SECTION (FEATURING Gemini_Generated_Image_qkkzr9qkkzr9qkkz.png) -->
+    <section id="hero" class="relative pt-8 pb-20 lg:pt-12 lg:pb-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+            
+            <!-- Hero Art Showcase (The Featured Master Artwork) -->
+            <div class="relative rounded-3xl overflow-hidden hero-art-frame bg-surface shadow-2xl">
+                <img src="./Gemini_Generated_Image_qkkzr9qkkzr9qkkz.png" 
+                     alt="AnshuAI Intelligence Illuminated — Enterprise AI & ServiceNow Transformation" 
+                     class="w-full h-auto object-cover max-h-[580px] hover:scale-[1.01] transition duration-700">
+                
+                <!-- Quick Clickable Overlay on the "EXPLORE SOLUTIONS" button in the artwork -->
+                <a href="#accelerators" 
+                   aria-label="Explore Solutions" 
+                   class="absolute right-[4%] top-[45%] w-[18%] h-[12%] hidden sm:block rounded-full cursor-pointer opacity-0 hover:opacity-100 transition border-2 border-goldLight bg-gold/20"
+                   title="Click to Explore Solutions">
+                </a>
+            </div>
+
+            <!-- Hero Value Proposition & Direct Call to Action -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-2">
+                <div class="lg:col-span-8 space-y-4">
+                    <!-- Credential Pill -->
+                    <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface border border-gold/40 text-xs font-semibold text-goldLight">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        <span>ServiceNow Certified Technical Architect (CTA) Practice &bull; Bespoke Enterprise AI</span>
                     </div>
 
-                    <!-- Main Headline -->
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-white tracking-tight leading-[1.12]">
-                        Industrialized Workflows. <br>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading text-white tracking-tight leading-[1.15]">
+                        Where ServiceNow Architectural Mastery Meets <br>
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold via-goldLight to-white">
-                            Bespoke Enterprise AI.
-                        </span> <br>
-                        Measurable Velocity.
+                            Bespoke Enterprise Intelligence
+                        </span>
                     </h1>
 
-                    <!-- Executive Sub-headline -->
-                    <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
-                        Operational excellence is no longer optional—it is a strategic imperative. <strong class="text-white">AnshuAI</strong> dismantles administrative silos, replaces spreadsheet overhead with automated governance, and embeds private algorithmic intelligence directly into enterprise operational pipelines.
+                    <p class="text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed">
+                        Operational excellence is no longer optional—it is a strategic imperative. <strong class="text-white">AnshuAI</strong> dismantles administrative silos, eliminates spreadsheet fatigue, and embeds private, domain-tuned algorithmic intelligence directly into enterprise operational pipelines.
                     </p>
-
-                    <!-- Trust Stats Bar -->
-                    <div class="grid grid-cols-3 gap-4 pt-2 border-y border-white/[0.08] py-4 max-w-xl">
-                        <div>
-                            <div class="text-2xl sm:text-3xl font-extrabold text-white font-heading">30–40%</div>
-                            <div class="text-[11px] text-slate-400 mt-0.5">Resolution Time Reduction</div>
-                        </div>
-                        <div>
-                            <div class="text-2xl sm:text-3xl font-extrabold text-gold font-heading">Zero</div>
-                            <div class="text-[11px] text-slate-400 mt-0.5">Regulatory Audit Penalties</div>
-                        </div>
-                        <div>
-                            <div class="text-2xl sm:text-3xl font-extrabold text-teal font-heading">8–12 Wks</div>
-                            <div class="text-[11px] text-slate-400 mt-0.5">Agile Deployment Sprint</div>
-                        </div>
-                    </div>
 
                     <!-- Action Buttons -->
                     <div class="pt-2 flex flex-wrap items-center gap-4">
-                        <a href="#contact" class="btn-gold px-7 py-3.5 rounded-xl text-xs sm:text-sm uppercase tracking-wider flex items-center gap-3">
+                        <a href="#contact" class="btn-gold-solid px-8 py-3.5 text-xs sm:text-sm uppercase tracking-wider flex items-center gap-3">
                             <span>Request Value Assessment</span>
                             <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>
-                        <a href="#accelerators" class="btn-secondary px-6 py-3.5 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2">
-                            <i class="fa-solid fa-layer-group text-gold"></i>
-                            <span>View Industry Accelerators</span>
+                        <a href="#accelerators" class="btn-teal-pill px-7 py-3.5 text-xs sm:text-sm font-semibold flex items-center gap-2">
+                            <i class="fa-solid fa-layer-group text-tealGlow"></i>
+                            <span>View HeadStart Accelerators</span>
+                        </a>
+                        <a href="#calculator" class="btn-gold-pill px-6 py-3.5 text-xs sm:text-sm font-semibold flex items-center gap-2">
+                            <i class="fa-solid fa-calculator text-gold"></i>
+                            <span>ROI Yield Estimator</span>
                         </a>
                     </div>
                 </div>
 
-                <!-- Right: AnshuAI Command Center (Live Interactive UI Mockup) -->
-                <div class="lg:col-span-5">
-                    <div class="relative rounded-2xl bg-surface/90 border border-white/10 shadow-2xl p-5 space-y-4">
-                        <!-- Command Center Header -->
-                        <div class="flex items-center justify-between border-b border-white/[0.08] pb-3">
-                            <div class="flex items-center gap-2">
-                                <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
-                                <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
-                                <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
-                                <span class="text-xs text-slate-400 font-mono ml-2">anshuai-orchestrator.service-now.com</span>
-                            </div>
-                            <span class="text-[10px] text-emerald-400 font-mono uppercase bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">Live Pipeline</span>
+                <!-- Live Key Metrics Card -->
+                <div class="lg:col-span-4">
+                    <div class="theme-card rounded-2xl p-6 space-y-4">
+                        <div class="flex items-center justify-between border-b border-gold/20 pb-3">
+                            <span class="text-xs uppercase tracking-widest text-gold font-bold">Contractual ROI Gates</span>
+                            <span class="text-[10px] text-emerald-400 font-mono"><i class="fa-solid fa-shield-check"></i> Verified</span>
                         </div>
-
-                        <!-- Live Telemetry Case Feed -->
-                        <div class="space-y-3 font-mono text-xs">
-                            <!-- Case Item 1 -->
-                            <div class="p-3.5 rounded-xl bg-dark/70 border border-white/[0.06] space-y-2">
-                                <div class="flex justify-between items-center text-[11px]">
-                                    <span class="text-gold font-bold">CASE-92841 [Healthcare CSM]</span>
-                                    <span class="text-emerald-400 text-[10px]"><i class="fa-solid fa-check"></i> Auto-Triaged</span>
-                                </div>
-                                <div class="text-slate-300 text-[11px]">
-                                    Inbound: Post-op EHR telemetry flag &bull; Clinical urgency: High
-                                </div>
-                                <div class="flex items-center justify-between text-[10px] text-slate-400 pt-1 border-t border-white/[0.05]">
-                                    <span>Model: Anshu Clinical RAG v3.2</span>
-                                    <span class="text-teal font-semibold">Latency: 142ms</span>
-                                </div>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="text-slate-300">Resolution Time Reduction</span>
+                                <span class="text-base font-extrabold text-white font-heading">30–40%</span>
                             </div>
-
-                            <!-- Case Item 2 -->
-                            <div class="p-3.5 rounded-xl bg-dark/70 border border-white/[0.06] space-y-2">
-                                <div class="flex justify-between items-center text-[11px]">
-                                    <span class="text-cyan font-bold">INC-40291 [Manufacturing FSM]</span>
-                                    <span class="text-amber-400 text-[10px]"><i class="fa-solid fa-wrench"></i> Dispatched</span>
-                                </div>
-                                <div class="text-slate-300 text-[11px]">
-                                    Bearing harmonic vibration > 4.2mm/s &bull; Auto technician work order #7810
-                                </div>
-                                <div class="flex items-center justify-between text-[10px] text-slate-400 pt-1 border-t border-white/[0.05]">
-                                    <span>Nearest Specialist: Tharun N. (0.8 mi)</span>
-                                    <span class="text-gold font-semibold">SLA: 100% On-Track</span>
-                                </div>
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="text-slate-300">Clinician Reclaim / Month</span>
+                                <span class="text-base font-extrabold text-gold font-heading">1,000+ Hrs</span>
                             </div>
-                        </div>
-
-                        <!-- Command Center Metric Footer -->
-                        <div class="grid grid-cols-2 gap-3 pt-2">
-                            <div class="p-3 rounded-xl bg-white/[0.02] border border-white/[0.05] text-center">
-                                <div class="text-lg font-bold text-white font-heading">+34.8%</div>
-                                <div class="text-[10px] text-slate-400 uppercase">Operational Yield</div>
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="text-slate-300">Preventive MRO Downtime</span>
+                                <span class="text-base font-extrabold text-tealGlow font-heading">-25%</span>
                             </div>
-                            <div class="p-3 rounded-xl bg-white/[0.02] border border-white/[0.05] text-center">
-                                <div class="text-lg font-bold text-gold font-heading">1,000+ Hrs</div>
-                                <div class="text-[10px] text-slate-400 uppercase">Clinician Reclaim/Mo</div>
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="text-slate-300">Rapid Sprint Go-Live</span>
+                                <span class="text-base font-extrabold text-goldLight font-heading">8–12 Weeks</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
     <!-- CREDENTIALS STRIP -->
-    <section class="border-y border-white/[0.08] bg-surface/50 py-6">
+    <section class="border-y border-gold/25 bg-surface/60 py-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-wrap items-center justify-center lg:justify-between gap-6 text-xs text-slate-400">
-                <span class="uppercase tracking-widest text-slate-500 font-semibold text-[11px]">Enterprise Architecture Standards:</span>
+            <div class="flex flex-wrap items-center justify-center lg:justify-between gap-6 text-xs text-slate-300 font-medium">
+                <span class="uppercase tracking-widest text-gold font-bold text-[11px]">Architecture Governance:</span>
                 <div class="flex items-center gap-2"><i class="fa-solid fa-certificate text-gold"></i> ServiceNow Certified Technical Architect (CTA)</div>
                 <div class="flex items-center gap-2"><i class="fa-solid fa-shield-halved text-emerald-400"></i> HIPAA & ISO 27001 Security Frameworks</div>
                 <div class="flex items-center gap-2"><i class="fa-solid fa-network-wired text-cyan"></i> HL7 FHIR & Industrial IoT Protocols</div>
@@ -256,74 +238,74 @@
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
                 <span class="text-xs font-bold uppercase tracking-widest text-gold">The Transformation Imperative</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white">
-                    Eliminating Friction in High-Stakes Operations
+                    What Is Holding Organizations Back?
                 </h2>
-                <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
-                    Legacy enterprise operations suffer from siloed data, spreadsheet fatigue, and compliance blind spots. AnshuAI replaces manual overhead with auditable, high-velocity workflows.
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    Legacy workflows, manual email loops, and disconnected spreadsheets throttle operational velocity. AnshuAI replaces friction with auditable, automated systems of action.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Friction Card 01 -->
-                <div class="glass-card rounded-2xl p-6 space-y-4">
-                    <div class="w-10 h-10 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 flex items-center justify-center text-lg">
+                <div class="theme-card rounded-2xl p-6 space-y-4">
+                    <div class="w-11 h-11 rounded-xl bg-red-500/15 border border-red-500/30 text-red-400 flex items-center justify-center text-xl">
                         <i class="fa-solid fa-sitemap"></i>
                     </div>
-                    <div class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Challenge 01</div>
+                    <div class="text-xs uppercase tracking-wider text-gold font-bold">Challenge 01</div>
                     <h3 class="text-lg font-bold text-white">Decentralized Silos</h3>
-                    <p class="text-xs text-slate-400 leading-relaxed">
-                        Data scattered across administrative, clinical, and supplier databases, resulting in fragmented visibility and zero single source of truth.
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Data scattered across administrative, clinical, and supplier databases, resulting in total loss of visibility and zero single source of truth.
                     </p>
-                    <div class="pt-3 border-t border-white/[0.05] text-[11px] text-goldLight flex items-center gap-1.5">
-                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    <div class="pt-3 border-t border-gold/20 text-[11px] text-goldLight flex items-center gap-1.5 font-semibold">
+                        <i class="fa-solid fa-check text-tealGlow"></i>
                         <span>AnshuAI: Unified System of Action</span>
                     </div>
                 </div>
 
                 <!-- Friction Card 02 -->
-                <div class="glass-card rounded-2xl p-6 space-y-4">
-                    <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-lg">
+                <div class="theme-card rounded-2xl p-6 space-y-4">
+                    <div class="w-11 h-11 rounded-xl bg-amber-500/15 border border-amber-500/30 text-amber-400 flex items-center justify-center text-xl">
                         <i class="fa-solid fa-table"></i>
                     </div>
-                    <div class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Challenge 02</div>
+                    <div class="text-xs uppercase tracking-wider text-gold font-bold">Challenge 02</div>
                     <h3 class="text-lg font-bold text-white">Spreadsheet Fatigue</h3>
-                    <p class="text-xs text-slate-400 leading-relaxed">
+                    <p class="text-xs text-slate-300 leading-relaxed">
                         Heavy reliance on manual Excel reconciliations, phone follow-ups, and email handoffs causing immense staff burnout and clerical errors.
                     </p>
-                    <div class="pt-3 border-t border-white/[0.05] text-[11px] text-goldLight flex items-center gap-1.5">
-                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    <div class="pt-3 border-t border-gold/20 text-[11px] text-goldLight flex items-center gap-1.5 font-semibold">
+                        <i class="fa-solid fa-check text-tealGlow"></i>
                         <span>AnshuAI: Zero-Touch Flow Automation</span>
                     </div>
                 </div>
 
                 <!-- Friction Card 03 -->
-                <div class="glass-card rounded-2xl p-6 space-y-4">
-                    <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-lg">
+                <div class="theme-card rounded-2xl p-6 space-y-4">
+                    <div class="w-11 h-11 rounded-xl bg-cyan-500/15 border border-cyan-500/30 text-cyan flex items-center justify-center text-xl">
                         <i class="fa-solid fa-eye-slash"></i>
                     </div>
-                    <div class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Challenge 03</div>
+                    <div class="text-xs uppercase tracking-wider text-gold font-bold">Challenge 03</div>
                     <h3 class="text-lg font-bold text-white">Opaque Operations</h3>
-                    <p class="text-xs text-slate-400 leading-relaxed">
+                    <p class="text-xs text-slate-300 leading-relaxed">
                         Inability to track real-time resolution SLAs, diagnose operational bottlenecks, or predict technician and supplier delays.
                     </p>
-                    <div class="pt-3 border-t border-white/[0.05] text-[11px] text-goldLight flex items-center gap-1.5">
-                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    <div class="pt-3 border-t border-gold/20 text-[11px] text-goldLight flex items-center gap-1.5 font-semibold">
+                        <i class="fa-solid fa-check text-tealGlow"></i>
                         <span>AnshuAI: Predictive SLA Visibility</span>
                     </div>
                 </div>
 
                 <!-- Friction Card 04 -->
-                <div class="glass-card rounded-2xl p-6 space-y-4">
-                    <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-lg">
+                <div class="theme-card rounded-2xl p-6 space-y-4">
+                    <div class="w-11 h-11 rounded-xl bg-purple-500/15 border border-purple-500/30 text-purple-400 flex items-center justify-center text-xl">
                         <i class="fa-solid fa-scale-unbalanced"></i>
                     </div>
-                    <div class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Challenge 04</div>
+                    <div class="text-xs uppercase tracking-wider text-gold font-bold">Challenge 04</div>
                     <h3 class="text-lg font-bold text-white">Regulatory Exposure</h3>
-                    <p class="text-xs text-slate-400 leading-relaxed">
+                    <p class="text-xs text-slate-300 leading-relaxed">
                         Disjointed records and non-standardized audit logs expose organizations to major safety incidents and crippling compliance fines.
                     </p>
-                    <div class="pt-3 border-t border-white/[0.05] text-[11px] text-goldLight flex items-center gap-1.5">
-                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    <div class="pt-3 border-t border-gold/20 text-[11px] text-goldLight flex items-center gap-1.5 font-semibold">
+                        <i class="fa-solid fa-check text-tealGlow"></i>
                         <span>AnshuAI: Immutable Tamper-Proof Audit</span>
                     </div>
                 </div>
@@ -332,30 +314,30 @@
     </section>
 
     <!-- THE FOUR PILLARS SECTION (SLIDE 4) -->
-    <section id="pillars" class="py-24 bg-surface/40 border-t border-white/[0.08]">
+    <section id="pillars" class="py-24 bg-surface/50 border-t border-gold/25">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
                 <span class="text-xs font-bold uppercase tracking-widest text-gold">Architecture Pillars</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white">
                     Four Pillars of AnshuAI Expertise
                 </h2>
-                <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
                     A synchronized framework combining enterprise-scale platform engineering with bespoke algorithmic intelligence.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Pillar 1 -->
-                <div class="glass-card rounded-2xl p-8 space-y-4 relative overflow-hidden">
-                    <div class="w-12 h-12 rounded-xl bg-gold/15 text-gold flex items-center justify-center text-xl border border-gold/30">
+                <div class="theme-card rounded-2xl p-8 space-y-4 relative overflow-hidden">
+                    <div class="w-12 h-12 rounded-xl bg-gold/15 text-gold flex items-center justify-center text-xl border border-gold/40">
                         <i class="fa-solid fa-network-wired"></i>
                     </div>
                     <div class="text-xs uppercase tracking-wider text-gold font-bold">Pillar 01</div>
                     <h3 class="text-2xl font-bold font-heading text-white">ServiceNow Mastered</h3>
                     <p class="text-slate-300 text-sm leading-relaxed">
-                        Centralizing, optimizing, and industrializing your workflows across CSM, ITSM, and FSM. Governed by Certified Technical Architects (CTA) to ensure enterprise-grade stability and zero technical debt.
+                        Centralizing, optimizing, and industrializing your workflows across CSM, ITSM, and FSM. Governed by Certified Technical Architects (CTA) to ensure enterprise stability and zero technical debt.
                     </p>
-                    <ul class="space-y-2 text-xs text-slate-400 pt-2 border-t border-white/[0.06]">
+                    <ul class="space-y-2 text-xs text-slate-300 pt-2 border-t border-gold/20">
                         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> ServiceNow CSM, ITSM & Field Service Management</li>
                         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> Integration Hub REST/SOAP orchestration & custom spokes</li>
                         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> CTA-level technical governance and license yield audits</li>
@@ -363,25 +345,25 @@
                 </div>
 
                 <!-- Pillar 2 -->
-                <div class="glass-card rounded-2xl p-8 space-y-4 relative overflow-hidden">
-                    <div class="w-12 h-12 rounded-xl bg-teal/15 text-teal flex items-center justify-center text-xl border border-teal/30">
+                <div class="theme-card rounded-2xl p-8 space-y-4 relative overflow-hidden">
+                    <div class="w-12 h-12 rounded-xl bg-teal/15 text-tealGlow flex items-center justify-center text-xl border border-teal/40">
                         <i class="fa-solid fa-brain"></i>
                     </div>
-                    <div class="text-xs uppercase tracking-wider text-teal font-bold">Pillar 02</div>
+                    <div class="text-xs uppercase tracking-wider text-tealGlow font-bold">Pillar 02</div>
                     <h3 class="text-2xl font-bold font-heading text-white">Bespoke Enterprise AI</h3>
                     <p class="text-slate-300 text-sm leading-relaxed">
                         Developing custom machine learning algorithms and contextual retrieval-augmented generation (RAG) agents fine-tuned on your proprietary business ontologies—not generic off-the-shelf wrappers.
                     </p>
-                    <ul class="space-y-2 text-xs text-slate-400 pt-2 border-t border-white/[0.06]">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal"></i> Private vector search indexed on enterprise SOPs and clinical files</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal"></i> Time-series anomaly detection for industrial equipment telemetry</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal"></i> Zero data leakage; secure on-prem or private cloud hosting</li>
+                    <ul class="space-y-2 text-xs text-slate-300 pt-2 border-t border-gold/20">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-tealGlow"></i> Private vector search indexed on enterprise SOPs and clinical files</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-tealGlow"></i> Time-series anomaly detection for industrial equipment telemetry</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-tealGlow"></i> Zero data leakage; secure on-prem or private cloud hosting</li>
                     </ul>
                 </div>
 
                 <!-- Pillar 3 -->
-                <div class="glass-card rounded-2xl p-8 space-y-4 relative overflow-hidden">
-                    <div class="w-12 h-12 rounded-xl bg-cyan/15 text-cyan flex items-center justify-center text-xl border border-cyan/30">
+                <div class="theme-card rounded-2xl p-8 space-y-4 relative overflow-hidden">
+                    <div class="w-12 h-12 rounded-xl bg-cyan/15 text-cyan flex items-center justify-center text-xl border border-cyan/40">
                         <i class="fa-solid fa-wand-magic-sparkles"></i>
                     </div>
                     <div class="text-xs uppercase tracking-wider text-cyan font-bold">Pillar 03</div>
@@ -389,7 +371,7 @@
                     <p class="text-slate-300 text-sm leading-relaxed">
                         Eliminating routine administration from daily operations. Autonomous triage, NLP document parsing, and instant approval handoffs drive productivity while slashing clerical error rates.
                     </p>
-                    <ul class="space-y-2 text-xs text-slate-400 pt-2 border-t border-white/[0.06]">
+                    <ul class="space-y-2 text-xs text-slate-300 pt-2 border-t border-gold/20">
                         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan"></i> Zero-touch ticket classification and sentiment-based routing</li>
                         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan"></i> Optical character recognition (OCR) for invoices & clinical records</li>
                         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan"></i> Automated escalations mapped to dynamic contractual SLAs</li>
@@ -397,8 +379,8 @@
                 </div>
 
                 <!-- Pillar 4 -->
-                <div class="glass-card rounded-2xl p-8 space-y-4 relative overflow-hidden">
-                    <div class="w-12 h-12 rounded-xl bg-gold/15 text-gold flex items-center justify-center text-xl border border-gold/30">
+                <div class="theme-card rounded-2xl p-8 space-y-4 relative overflow-hidden">
+                    <div class="w-12 h-12 rounded-xl bg-gold/15 text-gold flex items-center justify-center text-xl border border-gold/40">
                         <i class="fa-solid fa-bolt-lightning"></i>
                     </div>
                     <div class="text-xs uppercase tracking-wider text-gold font-bold">Pillar 04</div>
@@ -406,7 +388,7 @@
                     <p class="text-slate-300 text-sm leading-relaxed">
                         Pre-configured, battle-tested solution packages tailored for immediate deployment in Healthcare, Manufacturing, and FMCG—delivering production value in 8 to 12 weeks.
                     </p>
-                    <ul class="space-y-2 text-xs text-slate-400 pt-2 border-t border-white/[0.06]">
+                    <ul class="space-y-2 text-xs text-slate-300 pt-2 border-t border-gold/20">
                         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> Pre-built connectors for Epic, Cerner, SAP, and IoT hubs</li>
                         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> Ready-to-deploy compliance guardrails and audit reporting</li>
                         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> Phased velocity sprint roadmap with predictable ROI gates</li>
@@ -417,30 +399,30 @@
     </section>
 
     <!-- INDUSTRY ACCELERATORS (SLIDES 5, 6, 7) -->
-    <section id="accelerators" class="py-24 relative border-t border-white/[0.08]">
+    <section id="accelerators" class="py-24 relative border-t border-gold/25">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
-                <span class="text-xs font-bold uppercase tracking-widest text-gold">Tailored Accelerators</span>
+                <span class="text-xs font-bold uppercase tracking-widest text-gold">Vertical Accelerators</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white">
-                    Built for High-Stakes Sectors
+                    Engineered for High-Stakes Industries
                 </h2>
-                <p class="text-slate-400 text-sm leading-relaxed">
-                    Select an industry accelerator below to explore its solution stack and verified impact metrics.
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    Select an accelerator below to view its architecture stack and verified operational impact.
                 </p>
             </div>
 
             <!-- Tab Switcher -->
-            <div class="flex justify-center mb-8 border-b border-white/[0.08]">
+            <div class="flex justify-center mb-8 border-b border-gold/30">
                 <div class="inline-flex gap-4 sm:gap-8">
-                    <button onclick="switchTab('healthcare')" id="tabBtn-healthcare" class="tab-btn active pb-4 px-3 text-sm font-bold flex items-center gap-2">
+                    <button onclick="switchTab('healthcare')" id="tabBtn-healthcare" class="industry-tab active pb-4 px-3 text-sm font-bold flex items-center gap-2">
                         <i class="fa-solid fa-heart-pulse"></i>
                         <span>Healthcare Agility</span>
                     </button>
-                    <button onclick="switchTab('manufacturing')" id="tabBtn-manufacturing" class="tab-btn pb-4 px-3 text-sm font-bold flex items-center gap-2">
+                    <button onclick="switchTab('manufacturing')" id="tabBtn-manufacturing" class="industry-tab pb-4 px-3 text-sm font-bold flex items-center gap-2">
                         <i class="fa-solid fa-industry"></i>
                         <span>Manufacturing Health</span>
                     </button>
-                    <button onclick="switchTab('fmcg')" id="tabBtn-fmcg" class="tab-btn pb-4 px-3 text-sm font-bold flex items-center gap-2">
+                    <button onclick="switchTab('fmcg')" id="tabBtn-fmcg" class="industry-tab pb-4 px-3 text-sm font-bold flex items-center gap-2">
                         <i class="fa-solid fa-boxes-packing"></i>
                         <span>FMCG Real-Time</span>
                     </button>
@@ -448,11 +430,11 @@
             </div>
 
             <!-- Tab Content Containers -->
-            <div class="glass-card rounded-3xl p-8 sm:p-12">
+            <div class="theme-card rounded-3xl p-8 sm:p-12">
                 <!-- TAB 1: HEALTHCARE -->
                 <div id="tab-healthcare" class="industry-tab-content grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                     <div class="lg:col-span-7 space-y-5">
-                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs font-bold">
                             <i class="fa-solid fa-user-doctor"></i> Patient Case Management
                         </div>
                         <h3 class="text-2xl sm:text-3xl font-bold font-heading text-white">
@@ -463,29 +445,29 @@
                         </p>
                         <div class="space-y-3 pt-2 text-xs">
                             <div class="flex items-start gap-3">
-                                <span class="w-6 h-6 rounded-lg bg-teal/20 text-teal flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <span class="w-6 h-6 rounded-lg bg-teal/20 text-tealGlow flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-check"></i></span>
                                 <div><strong class="text-white">ServiceNow CSM Multi-Channel Intake:</strong> Portal, email, and clinical telephony mapped into unified patient records.</div>
                             </div>
                             <div class="flex items-start gap-3">
-                                <span class="w-6 h-6 rounded-lg bg-teal/20 text-teal flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <span class="w-6 h-6 rounded-lg bg-teal/20 text-tealGlow flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-check"></i></span>
                                 <div><strong class="text-white">EMR / EHR Clinical API:</strong> Secure, HIPAA-compliant REST bridges to Epic, Cerner, and HL7 FHIR servers.</div>
                             </div>
                             <div class="flex items-start gap-3">
-                                <span class="w-6 h-6 rounded-lg bg-teal/20 text-teal flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <span class="w-6 h-6 rounded-lg bg-teal/20 text-tealGlow flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-check"></i></span>
                                 <div><strong class="text-white">Configurable Workflows & SLAs:</strong> Automated clinical prioritization ensuring timely treatment closures.</div>
                             </div>
                         </div>
                     </div>
                     <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
-                        <div class="p-6 rounded-2xl bg-dark/80 border border-teal/30">
-                            <span class="text-[11px] uppercase tracking-wider text-teal font-semibold">Resolution Speed</span>
+                        <div class="p-6 rounded-2xl bg-deep/90 border border-teal/40">
+                            <span class="text-[11px] uppercase tracking-wider text-tealGlow font-bold">Resolution Speed</span>
                             <div class="text-4xl font-extrabold text-white font-heading my-2">30–40%</div>
-                            <p class="text-xs text-slate-400">Slashing patient inquiry backlogs and improving care satisfaction.</p>
+                            <p class="text-xs text-slate-300">Slashing patient inquiry backlogs and restoring patient care satisfaction.</p>
                         </div>
-                        <div class="p-6 rounded-2xl bg-dark/80 border border-gold/30">
-                            <span class="text-[11px] uppercase tracking-wider text-gold font-semibold">Clinician Reclaim</span>
+                        <div class="p-6 rounded-2xl bg-deep/90 border border-gold/40">
+                            <span class="text-[11px] uppercase tracking-wider text-gold font-bold">Clinician Reclaim</span>
                             <div class="text-4xl font-extrabold text-gold font-heading my-2">1,000+ Hrs</div>
-                            <p class="text-xs text-slate-400">Monthly administrative hours returned to vital caregiving teams.</p>
+                            <p class="text-xs text-slate-300">Monthly administrative hours returned to vital hospital caregiving teams.</p>
                         </div>
                     </div>
                 </div>
@@ -493,7 +475,7 @@
                 <!-- TAB 2: MANUFACTURING -->
                 <div id="tab-manufacturing" class="industry-tab-content hidden grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                     <div class="lg:col-span-7 space-y-5">
-                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan/10 border border-cyan/30 text-cyan text-xs font-semibold">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan/15 border border-cyan/30 text-cyan text-xs font-bold">
                             <i class="fa-solid fa-gears"></i> Asset Health & FSM
                         </div>
                         <h3 class="text-2xl sm:text-3xl font-bold font-heading text-white">
@@ -504,29 +486,29 @@
                         </p>
                         <div class="space-y-3 pt-2 text-xs">
                             <div class="flex items-start gap-3">
-                                <span class="w-6 h-6 rounded-lg bg-teal/20 text-teal flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <span class="w-6 h-6 rounded-lg bg-teal/20 text-tealGlow flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-check"></i></span>
                                 <div><strong class="text-white">IoT Alert Telemetry Ingestion:</strong> Real-time vibration, thermal, and cycle monitors auto-generate work orders.</div>
                             </div>
                             <div class="flex items-start gap-3">
-                                <span class="w-6 h-6 rounded-lg bg-teal/20 text-teal flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <span class="w-6 h-6 rounded-lg bg-teal/20 text-tealGlow flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-check"></i></span>
                                 <div><strong class="text-white">Dynamic Field Service Dispatch:</strong> Automated technician skill, territory, and parts inventory matching.</div>
                             </div>
                             <div class="flex items-start gap-3">
-                                <span class="w-6 h-6 rounded-lg bg-teal/20 text-teal flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <span class="w-6 h-6 rounded-lg bg-teal/20 text-tealGlow flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-check"></i></span>
                                 <div><strong class="text-white">Auditable Recall Workflows:</strong> End-to-end component serial number tracing for rapid regulatory reporting.</div>
                             </div>
                         </div>
                     </div>
                     <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
-                        <div class="p-6 rounded-2xl bg-dark/80 border border-teal/30">
-                            <span class="text-[11px] uppercase tracking-wider text-teal font-semibold">MRO Reliability</span>
+                        <div class="p-6 rounded-2xl bg-deep/90 border border-teal/40">
+                            <span class="text-[11px] uppercase tracking-wider text-tealGlow font-bold">MRO Reliability</span>
                             <div class="text-4xl font-extrabold text-white font-heading my-2">-25%</div>
-                            <p class="text-xs text-slate-400">Preventive maintenance downtime reduction across critical equipment.</p>
+                            <p class="text-xs text-slate-300">Preventive maintenance downtime reduction across critical equipment.</p>
                         </div>
-                        <div class="p-6 rounded-2xl bg-dark/80 border border-gold/30">
-                            <span class="text-[11px] uppercase tracking-wider text-gold font-semibold">Audit Velocity</span>
+                        <div class="p-6 rounded-2xl bg-deep/90 border border-gold/40">
+                            <span class="text-[11px] uppercase tracking-wider text-gold font-bold">Audit Velocity</span>
                             <div class="text-4xl font-extrabold text-gold font-heading my-2">30–40%</div>
-                            <p class="text-xs text-slate-400">Faster product recall and compliance investigation closures.</p>
+                            <p class="text-xs text-slate-300">Faster product recall and compliance investigation closures.</p>
                         </div>
                     </div>
                 </div>
@@ -534,7 +516,7 @@
                 <!-- TAB 3: FMCG -->
                 <div id="tab-fmcg" class="industry-tab-content hidden grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                     <div class="lg:col-span-7 space-y-5">
-                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-400 text-xs font-semibold">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/15 border border-purple-500/30 text-purple-300 text-xs font-bold">
                             <i class="fa-solid fa-cart-flatbed"></i> Supply Chain Precision
                         </div>
                         <h3 class="text-2xl sm:text-3xl font-bold font-heading text-white">
@@ -545,29 +527,29 @@
                         </p>
                         <div class="space-y-3 pt-2 text-xs">
                             <div class="flex items-start gap-3">
-                                <span class="w-6 h-6 rounded-lg bg-teal/20 text-teal flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <span class="w-6 h-6 rounded-lg bg-teal/20 text-tealGlow flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-check"></i></span>
                                 <div><strong class="text-white">Predictive Demand Modeling:</strong> Machine learning forecasts factoring lead times, holidays, and store velocity.</div>
                             </div>
                             <div class="flex items-start gap-3">
-                                <span class="w-6 h-6 rounded-lg bg-teal/20 text-teal flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <span class="w-6 h-6 rounded-lg bg-teal/20 text-tealGlow flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-check"></i></span>
                                 <div><strong class="text-white">Automated Replenishment Sprints:</strong> Rule-based PO creation triggering vendor fulfillment without email lag.</div>
                             </div>
                             <div class="flex items-start gap-3">
-                                <span class="w-6 h-6 rounded-lg bg-teal/20 text-teal flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <span class="w-6 h-6 rounded-lg bg-teal/20 text-tealGlow flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-check"></i></span>
                                 <div><strong class="text-white">POS & Supplier Integration:</strong> Unifying distributor ERPs into a real-time safety stock dashboard.</div>
                             </div>
                         </div>
                     </div>
                     <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
-                        <div class="p-6 rounded-2xl bg-dark/80 border border-teal/30">
-                            <span class="text-[11px] uppercase tracking-wider text-teal font-semibold">Inventory Balance</span>
+                        <div class="p-6 rounded-2xl bg-deep/90 border border-teal/40">
+                            <span class="text-[11px] uppercase tracking-wider text-tealGlow font-bold">Inventory Balance</span>
                             <div class="text-4xl font-extrabold text-white font-heading my-2">20–30%</div>
-                            <p class="text-xs text-slate-400">Reduction in perishable stockouts and costly overstocking.</p>
+                            <p class="text-xs text-slate-300">Reduction in perishable stockouts and costly overstocking.</p>
                         </div>
-                        <div class="p-6 rounded-2xl bg-dark/80 border border-gold/30">
-                            <span class="text-[11px] uppercase tracking-wider text-gold font-semibold">Procurement Efficiency</span>
+                        <div class="p-6 rounded-2xl bg-deep/90 border border-gold/40">
+                            <span class="text-[11px] uppercase tracking-wider text-gold font-bold">Procurement Efficiency</span>
                             <div class="text-4xl font-extrabold text-gold font-heading my-2">15–25%</div>
-                            <p class="text-xs text-slate-400">Decrease in manual order management and spreadsheet tracking.</p>
+                            <p class="text-xs text-slate-300">Decrease in manual order management and spreadsheet tracking.</p>
                         </div>
                     </div>
                 </div>
@@ -576,24 +558,24 @@
     </section>
 
     <!-- INTERACTIVE ROI ESTIMATOR -->
-    <section id="calculator" class="py-24 bg-surface/30 border-t border-white/[0.08]">
+    <section id="calculator" class="py-24 bg-surface/40 border-t border-gold/25">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
                 <span class="text-xs font-bold uppercase tracking-widest text-gold">Value Modeling</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white">
                     Calculate Your Operational ROI Yield
                 </h2>
-                <p class="text-slate-400 text-sm">
+                <p class="text-slate-300 text-sm">
                     Estimate the annual hours and operating expenditure AnshuAI can reclaim across your enterprise.
                 </p>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 sm:p-10">
+            <div class="theme-card rounded-3xl p-6 sm:p-10">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div class="space-y-6">
                         <div>
                             <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Industry Sector</label>
-                            <select id="calcIndustry" class="w-full bg-dark border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold">
+                            <select id="calcIndustry" class="w-full bg-deep border border-gold/30 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold">
                                 <option value="healthcare">Healthcare & Clinical Networks</option>
                                 <option value="manufacturing">Manufacturing & Asset Operations</option>
                                 <option value="fmcg">FMCG & Supply Chain Logistics</option>
@@ -612,23 +594,23 @@
                         <div>
                             <div class="flex justify-between items-center mb-2">
                                 <label class="text-xs font-bold uppercase tracking-wider text-slate-300">Monthly Manual Inquiries / Work Orders</label>
-                                <span id="calcTicketsVal" class="text-sm font-bold text-teal">3,000 Cases</span>
+                                <span id="calcTicketsVal" class="text-sm font-bold text-tealGlow">3,000 Cases</span>
                             </div>
                             <input type="range" id="calcTickets" min="500" max="25000" step="500" value="3000" class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer">
                         </div>
                     </div>
 
-                    <div class="p-6 rounded-2xl bg-dark/90 border border-gold/30 space-y-6 text-center md:text-left">
-                        <div class="border-b border-white/[0.08] pb-4">
+                    <div class="p-6 rounded-2xl bg-deep/90 border border-gold/40 space-y-6 text-center md:text-left">
+                        <div class="border-b border-gold/20 pb-4">
                             <span class="text-xs text-slate-400 uppercase tracking-widest font-semibold">Estimated Reclaimed Hours</span>
                             <div class="text-3xl sm:text-4xl font-extrabold text-white font-heading mt-1" id="resHours">14,400 Hours</div>
-                            <p class="text-[11px] text-teal mt-1">Reclaimed from spreadsheet logging and manual triage loops</p>
+                            <p class="text-[11px] text-tealGlow mt-1">Reclaimed from spreadsheet logging and manual triage loops</p>
                         </div>
 
-                        <div class="border-b border-white/[0.08] pb-4">
+                        <div class="border-b border-gold/20 pb-4">
                             <span class="text-xs text-slate-400 uppercase tracking-widest font-semibold">Annualized Operational Yield</span>
                             <div class="text-3xl sm:text-4xl font-extrabold text-gold font-heading mt-1" id="resSavings">$360,000 / Year</div>
-                            <p class="text-[11px] text-slate-400 mt-1">Direct labor reallocation and penalty risk mitigation</p>
+                            <p class="text-[11px] text-slate-300 mt-1">Direct labor reallocation and penalty risk mitigation</p>
                         </div>
 
                         <div class="flex items-center justify-between text-xs text-slate-300">
@@ -636,7 +618,7 @@
                             <span class="font-bold text-emerald-400">8 to 12 Weeks (HeadStart)</span>
                         </div>
 
-                        <a href="#contact" class="btn-gold block w-full text-center py-3 rounded-xl text-xs uppercase tracking-wider">
+                        <a href="#contact" class="btn-gold-solid block w-full text-center py-3 text-xs uppercase tracking-wider">
                             Apply These Figures to Your Architecture
                         </a>
                     </div>
@@ -646,79 +628,79 @@
     </section>
 
     <!-- 5-STAGE SPRINT ROADMAP (SLIDE 9) -->
-    <section id="roadmap" class="py-24 relative border-t border-white/[0.08]">
+    <section id="roadmap" class="py-24 relative border-t border-gold/25">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
                 <span class="text-xs font-bold uppercase tracking-widest text-gold">Predictable Methodology</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white">
                     Velocity-Driven Sprint Roadmap
                 </h2>
-                <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
                     A phased, milestone-gated engineering execution designed to eliminate implementation risk and deliver production value in 8 to 12 weeks.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
-                <div class="glass-card rounded-2xl p-6 space-y-3 flex flex-col justify-between">
+                <div class="theme-card rounded-2xl p-6 space-y-3 flex flex-col justify-between">
                     <div>
                         <div class="text-2xl font-black text-gold font-heading mb-1">01</div>
                         <h3 class="text-sm font-bold text-white">Value Assessment</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed mt-2">
+                        <p class="text-xs text-slate-300 leading-relaxed mt-2">
                             Quantify workflow friction, catalog spreadsheet dependencies, and audit regulatory compliance gaps.
                         </p>
                     </div>
-                    <div class="text-[10px] text-slate-500 font-semibold uppercase tracking-wider pt-3 border-t border-white/[0.05]">Weeks 1–2</div>
+                    <div class="text-[10px] text-goldLight font-bold uppercase tracking-wider pt-3 border-t border-gold/20">Weeks 1–2</div>
                 </div>
 
-                <div class="glass-card rounded-2xl p-6 space-y-3 flex flex-col justify-between">
+                <div class="theme-card rounded-2xl p-6 space-y-3 flex flex-col justify-between">
                     <div>
-                        <div class="text-2xl font-black text-teal font-heading mb-1">02</div>
+                        <div class="text-2xl font-black text-tealGlow font-heading mb-1">02</div>
                         <h3 class="text-sm font-bold text-white">Strategic Design</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed mt-2">
+                        <p class="text-xs text-slate-300 leading-relaxed mt-2">
                             Collaborate with enterprise teams to specify API contracts, data models, and the optimized target state.
                         </p>
                     </div>
-                    <div class="text-[10px] text-slate-500 font-semibold uppercase tracking-wider pt-3 border-t border-white/[0.05]">Weeks 3–4</div>
+                    <div class="text-[10px] text-tealGlow font-bold uppercase tracking-wider pt-3 border-t border-gold/20">Weeks 3–4</div>
                 </div>
 
-                <div class="glass-card rounded-2xl p-6 space-y-3 flex flex-col justify-between">
+                <div class="theme-card rounded-2xl p-6 space-y-3 flex flex-col justify-between">
                     <div>
                         <div class="text-2xl font-black text-gold font-heading mb-1">03</div>
                         <h3 class="text-sm font-bold text-white">License Tuning</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed mt-2">
+                        <p class="text-xs text-slate-300 leading-relaxed mt-2">
                             Audit ServiceNow user entitlements to extract maximum platform yield from your existing software spend.
                         </p>
                     </div>
-                    <div class="text-[10px] text-slate-500 font-semibold uppercase tracking-wider pt-3 border-t border-white/[0.05]">Weeks 4–5</div>
+                    <div class="text-[10px] text-goldLight font-bold uppercase tracking-wider pt-3 border-t border-gold/20">Weeks 4–5</div>
                 </div>
 
-                <div class="glass-card rounded-2xl p-6 space-y-3 flex flex-col justify-between border-emerald-500/40">
+                <div class="theme-card rounded-2xl p-6 space-y-3 flex flex-col justify-between border-emerald-500/50">
                     <div>
                         <div class="text-2xl font-black text-emerald-400 font-heading mb-1">04</div>
                         <h3 class="text-sm font-bold text-white">Agile Deployment</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed mt-2">
+                        <p class="text-xs text-slate-300 leading-relaxed mt-2">
                             Rapid production launches of HeadStart accelerators, portal workflows, and bespoke AI in 8 to 12 weeks.
                         </p>
                     </div>
-                    <div class="text-[10px] text-emerald-400 font-semibold uppercase tracking-wider pt-3 border-t border-white/[0.05]">Weeks 6–12</div>
+                    <div class="text-[10px] text-emerald-400 font-bold uppercase tracking-wider pt-3 border-t border-gold/20">Weeks 6–12</div>
                 </div>
 
-                <div class="glass-card rounded-2xl p-6 space-y-3 flex flex-col justify-between">
+                <div class="theme-card rounded-2xl p-6 space-y-3 flex flex-col justify-between">
                     <div>
                         <div class="text-2xl font-black text-purple-400 font-heading mb-1">05</div>
                         <h3 class="text-sm font-bold text-white">Continuous Care</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed mt-2">
+                        <p class="text-xs text-slate-300 leading-relaxed mt-2">
                             Ongoing team training, KPI performance audits, model fine-tuning, and continuous pipeline evolution.
                         </p>
                     </div>
-                    <div class="text-[10px] text-slate-500 font-semibold uppercase tracking-wider pt-3 border-t border-white/[0.05]">Ongoing Post-Launch</div>
+                    <div class="text-[10px] text-purple-300 font-bold uppercase tracking-wider pt-3 border-t border-gold/20">Post-Launch</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ABOUT ANSHUAI & ENGINEERING BENCH -->
-    <section id="about" class="py-24 bg-surface/30 border-t border-white/[0.08]">
+    <section id="about" class="py-24 bg-surface/40 border-t border-gold/25">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-6 space-y-6">
@@ -732,36 +714,36 @@
                     <p class="text-slate-300 text-sm leading-relaxed">
                         We unite **Certified ServiceNow Technical Architects (CTA)** with senior machine learning practitioners. We don't deploy fragile prototypes—we build hardened, auditable transformation engines tailored to enterprise data sovereignty.
                     </p>
-                    <div class="grid grid-cols-2 gap-6 pt-4 border-t border-white/[0.08]">
+                    <div class="grid grid-cols-2 gap-6 pt-4 border-t border-gold/20">
                         <div>
                             <div class="text-2xl font-extrabold text-white font-heading">Certified CTA</div>
-                            <div class="text-xs text-slate-400 mt-1">Top-tier technical governance & system architecture</div>
+                            <div class="text-xs text-slate-300 mt-1">Top-tier technical governance & system architecture</div>
                         </div>
                         <div>
                             <div class="text-2xl font-extrabold text-gold font-heading">Private AI</div>
-                            <div class="text-xs text-slate-400 mt-1">Zero data exposure; dedicated sovereign models</div>
+                            <div class="text-xs text-slate-300 mt-1">Zero data exposure; dedicated sovereign models</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="lg:col-span-6">
-                    <div class="glass-card rounded-3xl p-8 space-y-5">
+                    <div class="theme-card rounded-3xl p-8 space-y-5">
                         <h3 class="text-lg font-bold font-heading text-white flex items-center gap-2">
                             <i class="fa-solid fa-shield-halved text-gold"></i>
                             <span>The AnshuAI Engineering Principles</span>
                         </h3>
                         <div class="space-y-3 text-xs">
-                            <div class="p-4 rounded-xl bg-dark/70 border border-white/[0.06]">
+                            <div class="p-4 rounded-xl bg-deep/80 border border-gold/20">
                                 <h4 class="font-bold text-white mb-1">1. Immutable Single Source of Truth</h4>
-                                <p class="text-slate-400">Every case routing, machine dispatch, and replenishment order is permanently recorded in a compliant audit trail.</p>
+                                <p class="text-slate-300">Every case routing, machine dispatch, and replenishment order is permanently recorded in a compliant audit trail.</p>
                             </div>
-                            <div class="p-4 rounded-xl bg-dark/70 border border-white/[0.06]">
+                            <div class="p-4 rounded-xl bg-deep/80 border border-gold/20">
                                 <h4 class="font-bold text-white mb-1">2. Domain-Grounded Models</h4>
-                                <p class="text-slate-400">Our machine learning microservices are fine-tuned on real industry ontologies—never uncalibrated public API calls.</p>
+                                <p class="text-slate-300">Our machine learning microservices are fine-tuned on real industry ontologies—never uncalibrated public API calls.</p>
                             </div>
-                            <div class="p-4 rounded-xl bg-dark/70 border border-white/[0.06]">
+                            <div class="p-4 rounded-xl bg-deep/80 border border-gold/20">
                                 <h4 class="font-bold text-white mb-1">3. Contractual Velocity Assurance</h4>
-                                <p class="text-slate-400">We replace open-ended consulting retainers with tightly scoped 8–12 week sprint delivery milestones.</p>
+                                <p class="text-slate-300">We replace open-ended consulting retainers with tightly scoped 8–12 week sprint delivery milestones.</p>
                             </div>
                         </div>
                     </div>
@@ -778,7 +760,7 @@
                 <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white">
                     Initiate Your Value Assessment
                 </h2>
-                <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
                     Discover how much friction and licensing overhead can be reclaimed from your existing platform.
                 </p>
             </div>
@@ -786,33 +768,33 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
                 <!-- Contact Meta Column -->
                 <div class="lg:col-span-5 space-y-6">
-                    <div class="glass-card rounded-3xl p-8 space-y-6">
+                    <div class="theme-card rounded-3xl p-8 space-y-6">
                         <div class="space-y-1">
                             <h3 class="text-xl font-bold font-heading text-white">AnshuAI Technologies</h3>
-                            <p class="text-xs text-gold">Domain: anshuai.in</p>
+                            <p class="text-xs text-gold font-bold">Official Domain: anshuai.in</p>
                         </div>
                         <p class="text-xs text-slate-300 leading-relaxed">
                             Whether assessing a new ServiceNow roll-out, optimizing existing license yields, or deploying bespoke AI microservices, our technical architects will prepare a custom roadmap.
                         </p>
-                        <div class="space-y-4 text-xs pt-4 border-t border-white/[0.08]">
+                        <div class="space-y-4 text-xs pt-4 border-t border-gold/20">
                             <div class="flex items-center gap-3 text-slate-300">
-                                <span class="w-8 h-8 rounded-lg bg-surface flex items-center justify-center text-gold border border-white/10"><i class="fa-regular fa-envelope"></i></span>
+                                <span class="w-8 h-8 rounded-lg bg-surface flex items-center justify-center text-gold border border-gold/30"><i class="fa-regular fa-envelope"></i></span>
                                 <div>
-                                    <span class="block text-[10px] uppercase text-slate-500 font-bold">Email Us</span>
+                                    <span class="block text-[10px] uppercase text-slate-400 font-bold">Email Us</span>
                                     <a href="mailto:contact@anshuai.in" class="text-white hover:text-gold font-medium">contact@anshuai.in</a>
                                 </div>
                             </div>
                             <div class="flex items-center gap-3 text-slate-300">
-                                <span class="w-8 h-8 rounded-lg bg-surface flex items-center justify-center text-teal border border-white/10"><i class="fa-solid fa-globe"></i></span>
+                                <span class="w-8 h-8 rounded-lg bg-surface flex items-center justify-center text-tealGlow border border-teal/30"><i class="fa-solid fa-globe"></i></span>
                                 <div>
-                                    <span class="block text-[10px] uppercase text-slate-500 font-bold">Corporate Portal</span>
+                                    <span class="block text-[10px] uppercase text-slate-400 font-bold">Corporate Portal</span>
                                     <a href="https://anshuai.in" class="text-white hover:text-gold font-medium">https://anshuai.in</a>
                                 </div>
                             </div>
                             <div class="flex items-center gap-3 text-slate-300">
-                                <span class="w-8 h-8 rounded-lg bg-surface flex items-center justify-center text-cyan border border-white/10"><i class="fa-solid fa-location-dot"></i></span>
+                                <span class="w-8 h-8 rounded-lg bg-surface flex items-center justify-center text-cyan border border-cyan/30"><i class="fa-solid fa-location-dot"></i></span>
                                 <div>
-                                    <span class="block text-[10px] uppercase text-slate-500 font-bold">Delivery Headquarters</span>
+                                    <span class="block text-[10px] uppercase text-slate-400 font-bold">Delivery Headquarters</span>
                                     <span class="text-white font-medium">Bengaluru, Karnataka, India</span>
                                 </div>
                             </div>
@@ -822,26 +804,26 @@
 
                 <!-- Intake Form -->
                 <div class="lg:col-span-7">
-                    <form id="assessmentForm" class="glass-card rounded-3xl p-8 sm:p-10 space-y-6">
+                    <form id="assessmentForm" class="theme-card rounded-3xl p-8 sm:p-10 space-y-6">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div>
                                 <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Full Name *</label>
-                                <input type="text" required id="formName" placeholder="e.g. Vikram Sharma" class="w-full bg-dark border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition">
+                                <input type="text" required id="formName" placeholder="e.g. Vikram Sharma" class="w-full bg-deep border border-gold/30 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition">
                             </div>
                             <div>
                                 <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Corporate Work Email *</label>
-                                <input type="email" required id="formEmail" placeholder="e.g. v.sharma@enterprise.com" class="w-full bg-dark border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition">
+                                <input type="email" required id="formEmail" placeholder="e.g. v.sharma@enterprise.com" class="w-full bg-deep border border-gold/30 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition">
                             </div>
                         </div>
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div>
                                 <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Organization Name *</label>
-                                <input type="text" required id="formCompany" placeholder="e.g. Apollo Healthcare / Tata FMCG" class="w-full bg-dark border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition">
+                                <input type="text" required id="formCompany" placeholder="e.g. Apollo Healthcare / Tata FMCG" class="w-full bg-deep border border-gold/30 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition">
                             </div>
                             <div>
                                 <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Industry Focus *</label>
-                                <select id="formIndustry" class="w-full bg-dark border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition">
+                                <select id="formIndustry" class="w-full bg-deep border border-gold/30 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition">
                                     <option value="healthcare">Healthcare & Clinical Networks</option>
                                     <option value="manufacturing">Manufacturing & Asset Operations</option>
                                     <option value="fmcg">FMCG & Real-Time Inventory</option>
@@ -852,7 +834,7 @@
 
                         <div>
                             <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Current ServiceNow & AI Environment</label>
-                            <select id="formStatus" class="w-full bg-dark border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition">
+                            <select id="formStatus" class="w-full bg-deep border border-gold/30 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition">
                                 <option value="optimizing">Active ServiceNow Instance — Looking to Optimize & Embed AI</option>
                                 <option value="new">New ServiceNow Implementation Planned</option>
                                 <option value="headstart">Interested in 8–12 Week HeadStart Accelerators</option>
@@ -862,14 +844,14 @@
 
                         <div>
                             <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Core Workflow Challenges</label>
-                            <textarea id="formMessage" rows="4" placeholder="Detail your primary workflow bottlenecks, ticket backlogs, or regulatory reporting gaps..." class="w-full bg-dark border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition"></textarea>
+                            <textarea id="formMessage" rows="4" placeholder="Detail your primary workflow bottlenecks, ticket backlogs, or regulatory reporting gaps..." class="w-full bg-deep border border-gold/30 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition"></textarea>
                         </div>
 
-                        <button type="submit" class="btn-gold w-full py-4 rounded-xl text-xs sm:text-sm uppercase tracking-wider">
+                        <button type="submit" class="btn-gold-solid w-full py-4 text-xs sm:text-sm uppercase tracking-wider">
                             Submit Request for Assessment
                         </button>
 
-                        <div id="formSuccess" class="hidden p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs text-center">
+                        <div id="formSuccess" class="hidden p-4 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs text-center font-medium">
                             Thank you! Your assessment inquiry has been received. An AnshuAI Certified Technical Architect will review your requirements within 24 hours.
                         </div>
                     </form>
@@ -879,16 +861,24 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-dark border-t border-white/[0.08] pt-16 pb-12 text-slate-400 text-xs">
+    <footer class="bg-deep border-t border-gold/25 pt-16 pb-12 text-slate-400 text-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/[0.08]">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-gold/20">
                 <!-- Brand Info -->
                 <div class="lg:col-span-2 space-y-4">
-                    <img src="./logo.svg" alt="AnshuAI Logo" class="h-10 w-auto object-contain">
-                    <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center rounded-xl bg-surface border border-gold/40 p-1">
+                            <img src="./logo-icon.svg" alt="AnshuAI Logo" class="w-full h-full object-contain">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-2xl font-extrabold tracking-tight font-heading text-white">Anshu<span class="text-gold">AI</span></span>
+                            <span class="text-[10px] font-bold tracking-[0.2em] text-goldLight uppercase -mt-0.5">Intelligence Illuminated</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-300 max-w-sm leading-relaxed">
                         AnshuAI is an enterprise technology consultancy accelerating digital transformation by coupling deep ServiceNow architectural mastery with bespoke enterprise artificial intelligence.
                     </p>
-                    <div class="text-[11px] text-gold">
+                    <div class="text-[11px] text-gold font-semibold">
                         Official Domain: <strong>anshuai.in</strong>
                     </div>
                 </div>
@@ -928,12 +918,12 @@
             </div>
 
             <!-- Bottom Line -->
-            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
                 <p>&copy; 2026 AnshuAI Technologies Pvt. Ltd. All rights reserved. Registered domain: <strong>anshuai.in</strong></p>
                 <div class="flex items-center gap-6">
-                    <a href="#" class="hover:text-slate-400 transition">Privacy Policy</a>
-                    <a href="#" class="hover:text-slate-400 transition">Terms of Engagement</a>
-                    <a href="#" class="hover:text-slate-400 transition">Data Governance & Security</a>
+                    <a href="#" class="hover:text-slate-200 transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-200 transition">Terms of Engagement</a>
+                    <a href="#" class="hover:text-slate-200 transition">Data Governance & Security</a>
                 </div>
             </div>
         </div>
