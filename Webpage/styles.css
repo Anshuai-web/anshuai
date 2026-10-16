@@ -31,16 +31,31 @@
 html {
   scroll-behavior: smooth;
   font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
   background-color: var(--bg-deep);
   color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
   background-image: 
     radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.12) 0%, transparent 45%),
     radial-gradient(circle at 85% 15%, rgba(20, 184, 166, 0.08) 0%, transparent 40%),
     radial-gradient(circle at 15% 45%, rgba(6, 182, 212, 0.06) 0%, transparent 35%);
   background-attachment: fixed;
+}
+
+/* WebKit / iPadOS / iOS Safari Backdrop Blur Support */
+.backdrop-blur-xl,
+.backdrop-blur-2xl,
+.backdrop-blur-lg,
+.backdrop-blur-md,
+#navbar,
+#mobileMenu {
+  -webkit-backdrop-filter: blur(20px);
 }
 
 /* Custom Scrollbar */
