@@ -3,3 +3,4 @@ Resumes/
 .DS_Store
 ~$*.pptx
 *.tmp
+e2e_results.json
