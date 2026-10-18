@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 110" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="opt2Left" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="opt2Right" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="opt2Gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDF0CD"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#AA7C1E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MARK: THE MONOLITHIC V-PRISM -->
+  <g transform="translate(10, 5)">
+    <!-- Left Facet Pillar (Light Titanium) -->
+    <polygon points="18,18 48,18 50,88 34,88" fill="url(#opt2Left)"/>
+    
+    <!-- Right Facet Pillar (Deep Titanium Shadow) -->
+    <polygon points="82,18 52,18 50,88 66,88" fill="url(#opt2Right)"/>
+
+    <!-- The Ascending Core: Precision Golden Ingot -->
+    <polygon points="50,26 62,46 50,66 38,46" fill="url(#opt2Gold)"/>
+    
+    <!-- Base Foundation Keystone -->
+    <polygon points="50,72 60,88 40,88" fill="url(#opt2Gold)"/>
+  </g>
+
+  <!-- TYPOGRAPHY -->
+  <g transform="translate(125, 66)">
+    <text font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="40" letter-spacing="1.5" fill="#FFFFFF">VELLICOR</text>
+    <text x="228" y="-1" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="24" letter-spacing="2" fill="url(#opt2Gold)">TECHNOLOGIES</text>
+    <text x="3" y="24" font-family="'Outfit', sans-serif" font-weight="600" font-size="10.5" letter-spacing="5" fill="#94A3B8">OPTION 2 &bull; THE MONOLITHIC V-PRISM</text>
+  </g>
+</svg>

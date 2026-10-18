@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 110" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="opt4Top" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+    <linearGradient id="opt4Bottom" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+    <linearGradient id="opt4Gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDF0CD"/>
+      <stop offset="45%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#9A7B2C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MARK: THE DUAL VECTOR CHEVRON -->
+  <g transform="translate(10, 5)">
+    <!-- Upper Velocity Chevron -->
+    <path d="M 20 34 L 50 18 L 80 34 L 70 42 L 50 30 L 30 42 Z" fill="url(#opt4Top)"/>
+    
+    <!-- Central Anchored Core Cube / Keystone -->
+    <polygon points="50,40 66,52 50,66 34,52" fill="url(#opt4Gold)"/>
+    <polygon points="50,46 59,52 50,59 41,52" fill="#030A0D"/>
+
+    <!-- Lower Foundation Chevron -->
+    <path d="M 22 66 L 50 86 L 78 66 L 68 58 L 50 72 L 32 58 Z" fill="url(#opt4Bottom)"/>
+  </g>
+
+  <!-- TYPOGRAPHY -->
+  <g transform="translate(125, 66)">
+    <text font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="40" letter-spacing="1.5" fill="#FFFFFF">VELLICOR</text>
+    <text x="228" y="-1" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="24" letter-spacing="2" fill="url(#opt4Gold)">TECHNOLOGIES</text>
+    <text x="3" y="24" font-family="'Outfit', sans-serif" font-weight="600" font-size="10.5" letter-spacing="5" fill="#94A3B8">OPTION 4 &bull; THE DUAL VECTOR CHEVRON</text>
+  </g>
+</svg>

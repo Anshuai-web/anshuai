@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vellicor Technologies — Brand Identity & Logo Explorations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        deep: '#030A0D',
+                        surface: '#071A1E',
+                        gold: '#D4AF37',
+                        goldLight: '#FDF0CD',
+                        goldDark: '#9A7B2C',
+                        titanium: '#94A3B8'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        heading: ['"Outfit"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #FDF0CD 0%, #D4AF37 50%, #9A7B2C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body id="bodyRoot" class="bg-[#030A0D] text-slate-200 transition-colors duration-300 min-h-screen p-4 sm:p-8 lg:p-12">
+
+    <div class="max-w-7xl mx-auto space-y-10">
+        
+        <!-- HEADER -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-gold/20 pb-8">
+            <div class="space-y-2">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/30 text-xs font-mono text-gold font-bold">
+                    <i class="fa-solid fa-compass-drafting"></i> BRAND IDENTITY EXPLORATION
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-extrabold font-heading text-white tracking-tight">
+                    Vellicor Logo Options
+                </h1>
+                <p class="text-sm text-slate-400 max-w-2xl leading-relaxed">
+                    Designed around the phonetic and structural thesis of <strong>Vellicor</strong>: 
+                    <span class="text-gold font-semibold">Velocity</span> (kinetic speed &amp; agility) + 
+                    <span class="text-gold font-semibold">Core</span> (unshakeable stability &amp; institutional foundation).
+                </p>
+            </div>
+
+            <!-- Theme Toggle & Quick Actions -->
+            <div class="flex items-center gap-3">
+                <button id="themeToggle" class="px-4 py-2.5 rounded-full border border-gold/40 text-xs font-semibold text-gold bg-surface hover:bg-gold/10 transition flex items-center gap-2">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                    <span id="themeLabel">Toggle Light Background</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- 4 OPTIONS GRID -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+            <!-- OPTION 1: THE KINETIC KEYSTONE -->
+            <div class="rounded-3xl p-6 sm:p-8 border border-gold/30 bg-surface/80 backdrop-blur-xl space-y-6 shadow-2xl relative hover:border-gold transition">
+                <div class="flex items-center justify-between">
+                    <span class="px-3 py-1 rounded-full bg-gold/15 text-gold text-xs font-mono font-bold">OPTION 01</span>
+                    <span class="text-xs text-slate-400 font-mono">Recommended</span>
+                </div>
+
+                <div class="space-y-2">
+                    <h2 class="text-2xl font-bold text-white font-heading">The Kinetic Keystone</h2>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Two aerodynamic titanium velocity blades sweeping downward into a solid convergence vertex, securely suspending a radiant gold diamond keystone at the center.
+                    </p>
+                </div>
+
+                <!-- Preview Canvas -->
+                <div class="logo-preview-canvas rounded-2xl p-6 bg-black/40 border border-white/10 flex items-center justify-center min-h-[160px]">
+                    <img src="./logo-option-1.svg" alt="Option 1: The Kinetic Keystone" class="w-full max-w-md h-auto">
+                </div>
+
+                <!-- Attributes -->
+                <div class="grid grid-cols-2 gap-3 text-xs pt-2">
+                    <div class="p-3 rounded-xl bg-white/[0.02] border border-white/[0.06]">
+                        <div class="text-[10px] text-slate-400 font-mono uppercase">Velocity Element</div>
+                        <div class="font-bold text-white mt-0.5">Aerodynamic V-Blades</div>
+                    </div>
+                    <div class="p-3 rounded-xl bg-white/[0.02] border border-white/[0.06]">
+                        <div class="text-[10px] text-slate-400 font-mono uppercase">Core Element</div>
+                        <div class="font-bold text-gold mt-0.5">Anchored Diamond Keystone</div>
+                    </div>
+                </div>
+
+                <div class="text-xs text-slate-400 italic">
+                    <strong>Best For:</strong> Holding entities that require a classic, commanding, aerospace/institutional aura.
+                </div>
+            </div>
+
+            <!-- OPTION 2: THE MONOLITHIC V-PRISM -->
+            <div class="rounded-3xl p-6 sm:p-8 border border-white/15 bg-surface/80 backdrop-blur-xl space-y-6 shadow-2xl relative hover:border-gold transition">
+                <div class="flex items-center justify-between">
+                    <span class="px-3 py-1 rounded-full bg-white/10 text-white text-xs font-mono font-bold">OPTION 02</span>
+                    <span class="text-xs text-slate-400 font-mono">Architectural Monogram</span>
+                </div>
+
+                <div class="space-y-2">
+                    <h2 class="text-2xl font-bold text-white font-heading">The Monolithic V-Prism</h2>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        A razor-sharp geometric monogram with contrasting light/shadow titanium pillars forming a massive "V", illuminated by a centered golden ingot rising from the bedrock.
+                    </p>
+                </div>
+
+                <!-- Preview Canvas -->
+                <div class="logo-preview-canvas rounded-2xl p-6 bg-black/40 border border-white/10 flex items-center justify-center min-h-[160px]">
+                    <img src="./logo-option-2.svg" alt="Option 2: The Monolithic V-Prism" class="w-full max-w-md h-auto">
+                </div>
+
+                <!-- Attributes -->
+                <div class="grid grid-cols-2 gap-3 text-xs pt-2">
+                    <div class="p-3 rounded-xl bg-white/[0.02] border border-white/[0.06]">
+                        <div class="text-[10px] text-slate-400 font-mono uppercase">Velocity Element</div>
+                        <div class="font-bold text-white mt-0.5">Ascending Prism Pillars</div>
+                    </div>
+                    <div class="p-3 rounded-xl bg-white/[0.02] border border-white/[0.06]">
+                        <div class="text-[10px] text-slate-400 font-mono uppercase">Core Element</div>
+                        <div class="font-bold text-gold mt-0.5">Architectural Foundation Ingot</div>
+                    </div>
+                </div>
+
+                <div class="text-xs text-slate-400 italic">
+                    <strong>Best For:</strong> Modern enterprise technology leaders seeking high-contrast, bold architectural presence (like Snowflake or Vercel).
+                </div>
+            </div>
+
+            <!-- OPTION 3: THE ORBITAL VELOCITY CORE -->
+            <div class="rounded-3xl p-6 sm:p-8 border border-white/15 bg-surface/80 backdrop-blur-xl space-y-6 shadow-2xl relative hover:border-gold transition">
+                <div class="flex items-center justify-between">
+                    <span class="px-3 py-1 rounded-full bg-white/10 text-white text-xs font-mono font-bold">OPTION 03</span>
+                    <span class="text-xs text-slate-400 font-mono">Deep Tech &amp; AI</span>
+                </div>
+
+                <div class="space-y-2">
+                    <h2 class="text-2xl font-bold text-white font-heading">The Orbital Velocity Core</h2>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Dual dynamic orbital trajectories rotating at high kinetic velocity around an immovable, unshakeable golden diamond nucleus with illuminated central spark.
+                    </p>
+                </div>
+
+                <!-- Preview Canvas -->
+                <div class="logo-preview-canvas rounded-2xl p-6 bg-black/40 border border-white/10 flex items-center justify-center min-h-[160px]">
+                    <img src="./logo-option-3.svg" alt="Option 3: The Orbital Velocity Core" class="w-full max-w-md h-auto">
+                </div>
+
+                <!-- Attributes -->
+                <div class="grid grid-cols-2 gap-3 text-xs pt-2">
+                    <div class="p-3 rounded-xl bg-white/[0.02] border border-white/[0.06]">
+                        <div class="text-[10px] text-slate-400 font-mono uppercase">Velocity Element</div>
+                        <div class="font-bold text-white mt-0.5">Dynamic Elliptical Orbits</div>
+                    </div>
+                    <div class="p-3 rounded-xl bg-white/[0.02] border border-white/[0.06]">
+                        <div class="text-[10px] text-slate-400 font-mono uppercase">Core Element</div>
+                        <div class="font-bold text-gold mt-0.5">Dense Gravitational Nucleus</div>
+                    </div>
+                </div>
+
+                <div class="text-xs text-slate-400 italic">
+                    <strong>Best For:</strong> Sovereign AI platforms, deep tech ventures, and data-centric engineering holding groups.
+                </div>
+            </div>
+
+            <!-- OPTION 4: THE DUAL VECTOR CHEVRON -->
+            <div class="rounded-3xl p-6 sm:p-8 border border-white/15 bg-surface/80 backdrop-blur-xl space-y-6 shadow-2xl relative hover:border-gold transition">
+                <div class="flex items-center justify-between">
+                    <span class="px-3 py-1 rounded-full bg-white/10 text-white text-xs font-mono font-bold">OPTION 04</span>
+                    <span class="text-xs text-slate-400 font-mono">Modular Infrastructure</span>
+                </div>
+
+                <div class="space-y-2">
+                    <h2 class="text-2xl font-bold text-white font-heading">The Dual Vector Chevron</h2>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Two synchronized forward chevrons locking securely into a central gold keystone cube. Represents agile iterative velocity anchored by an unbreakable governance core.
+                    </p>
+                </div>
+
+                <!-- Preview Canvas -->
+                <div class="logo-preview-canvas rounded-2xl p-6 bg-black/40 border border-white/10 flex items-center justify-center min-h-[160px]">
+                    <img src="./logo-option-4.svg" alt="Option 4: The Dual Vector Chevron" class="w-full max-w-md h-auto">
+                </div>
+
+                <!-- Attributes -->
+                <div class="grid grid-cols-2 gap-3 text-xs pt-2">
+                    <div class="p-3 rounded-xl bg-white/[0.02] border border-white/[0.06]">
+                        <div class="text-[10px] text-slate-400 font-mono uppercase">Velocity Element</div>
+                        <div class="font-bold text-white mt-0.5">Dual High-Velocity Chevrons</div>
+                    </div>
+                    <div class="p-3 rounded-xl bg-white/[0.02] border border-white/[0.06]">
+                        <div class="text-[10px] text-slate-400 font-mono uppercase">Core Element</div>
+                        <div class="font-bold text-gold mt-0.5">Central Governance Keystone</div>
+                    </div>
+                </div>
+
+                <div class="text-xs text-slate-400 italic">
+                    <strong>Best For:</strong> Enterprise software integration, cloud architecture, and high-cadence platform engineering.
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SCALABILITY STAMP TEST (FAVICON & NAVBAR SIZES) -->
+        <div class="rounded-3xl p-8 border border-gold/20 bg-surface/50 space-y-6">
+            <h3 class="text-xl font-bold text-white font-heading">Responsive &amp; Icon Scale Verification</h3>
+            <p class="text-xs text-slate-400">
+                A tier-one enterprise logo must remain instantly legible from a 16px browser favicon to a 4K display. Here is how each mark performs at compact navigation scale:
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-2">
+                <div class="p-4 rounded-2xl bg-black/40 border border-white/10 text-center space-y-3">
+                    <div class="w-10 h-10 mx-auto rounded-xl bg-surface border border-gold/40 flex items-center justify-center p-1.5">
+                        <img src="./logo-option-1.svg" class="w-full h-full object-contain">
+                    </div>
+                    <div class="text-[11px] font-bold text-white">Option 1 Mark</div>
+                    <div class="text-[10px] text-slate-400">Crisp at 40px</div>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-black/40 border border-white/10 text-center space-y-3">
+                    <div class="w-10 h-10 mx-auto rounded-xl bg-surface border border-white/30 flex items-center justify-center p-1.5">
+                        <img src="./logo-option-2.svg" class="w-full h-full object-contain">
+                    </div>
+                    <div class="text-[11px] font-bold text-white">Option 2 Mark</div>
+                    <div class="text-[10px] text-slate-400">Crisp at 40px</div>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-black/40 border border-white/10 text-center space-y-3">
+                    <div class="w-10 h-10 mx-auto rounded-xl bg-surface border border-white/30 flex items-center justify-center p-1.5">
+                        <img src="./logo-option-3.svg" class="w-full h-full object-contain">
+                    </div>
+                    <div class="text-[11px] font-bold text-white">Option 3 Mark</div>
+                    <div class="text-[10px] text-slate-400">Crisp at 40px</div>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-black/40 border border-white/10 text-center space-y-3">
+                    <div class="w-10 h-10 mx-auto rounded-xl bg-surface border border-white/30 flex items-center justify-center p-1.5">
+                        <img src="./logo-option-4.svg" class="w-full h-full object-contain">
+                    </div>
+                    <div class="text-[11px] font-bold text-white">Option 4 Mark</div>
+                    <div class="text-[10px] text-slate-400">Crisp at 40px</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SCRIPT FOR LIGHT/DARK SWITCHER -->
+    <script>
+        const btn = document.getElementById('themeToggle');
+        const label = document.getElementById('themeLabel');
+        const body = document.getElementById('bodyRoot');
+        const canvases = document.querySelectorAll('.logo-preview-canvas');
+
+        let isLight = false;
+        btn.addEventListener('click', () => {
+            isLight = !isLight;
+            if (isLight) {
+                body.classList.remove('bg-[#030A0D]', 'text-slate-200');
+                body.classList.add('bg-slate-100', 'text-slate-800');
+                label.innerText = 'Switch to Obsidian Dark';
+                canvases.forEach(c => {
+                    c.classList.remove('bg-black/40', 'border-white/10');
+                    c.classList.add('bg-[#0a191f]', 'border-slate-300');
+                });
+            } else {
+                body.classList.remove('bg-slate-100', 'text-slate-800');
+                body.classList.add('bg-[#030A0D]', 'text-slate-200');
+                label.innerText = 'Toggle Light Background';
+                canvases.forEach(c => {
+                    c.classList.add('bg-black/40', 'border-white/10');
+                    c.classList.remove('bg-[#0a191f]', 'border-slate-300');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
