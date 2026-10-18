@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="o4LoopA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14B8A6"/><stop offset="50%" stop-color="#2DD4BF"/><stop offset="100%" stop-color="#0F766E"/>
+    </linearGradient>
+    <linearGradient id="o4LoopB" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9A7B2C"/><stop offset="50%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#FDF0CD"/>
+    </linearGradient>
+    <filter id="o4Glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#D4AF37" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <path d="M 50,50 C 35,32 15,35 15,50 C 15,65 35,68 50,50 Z" fill="none" stroke="url(#o4LoopA)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M 50,50 C 65,32 85,35 85,50 C 85,65 65,68 50,50 Z" fill="none" stroke="url(#o4LoopB)" stroke-width="9" stroke-linecap="round"/>
+  <g filter="url(#o4Glow)">
+    <circle cx="50" cy="50" r="4.8" fill="#041619"/>
+    <circle cx="50" cy="50" r="3" fill="#FFFFFF"/>
+  </g>
+</svg>

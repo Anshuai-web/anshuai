@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="wordmarkGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDF0CD"/>
+      <stop offset="45%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#8C6514"/>
+    </linearGradient>
+  </defs>
+
+  <!-- EMBLEM ICON -->
+  <g transform="translate(10, 10)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="o3Gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDF0CD"/><stop offset="45%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#8C6514"/>
+    </linearGradient>
+    <linearGradient id="o3Teal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5EEAD4"/><stop offset="50%" stop-color="#14B8A6"/><stop offset="100%" stop-color="#0F766E"/>
+    </linearGradient>
+    <linearGradient id="o3Cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#0369A1"/>
+    </linearGradient>
+    <filter id="o3Glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#D4AF37" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <g filter="url(#o3Glow)">
+    <polygon points="50,14 82,32 50,50 18,32" fill="url(#o3Teal)"/>
+    <polygon points="18,32 50,50 50,86 18,68" fill="url(#o3Cyan)"/>
+    <polygon points="50,50 82,32 82,68 50,86" fill="url(#o3Gold)"/>
+    <polygon points="50,38 60,50 50,62 40,50" fill="#041619"/>
+    <circle cx="50" cy="50" r="3.2" fill="#FFFFFF"/>
+    <line x1="50" y1="28" x2="50" y2="72" stroke="#FFFFFF" stroke-width="1.2" opacity="0.6"/>
+    <line x1="28" y1="50" x2="72" y2="50" stroke="#FFFFFF" stroke-width="1.2" opacity="0.6"/>
+  </g>
+</svg>
+  </g>
+
+  <!-- WORDMARK TYPOGRAPHY -->
+  <g transform="translate(130, 72)">
+    <text font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" 
+          font-weight="700" 
+          font-size="44" 
+          letter-spacing="-0.5" 
+          fill="#FFFFFF">Anshu</text>
+    <text x="140" y="0" 
+          font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" 
+          font-weight="800" 
+          font-size="44" 
+          letter-spacing="-0.5" 
+          fill="url(#wordmarkGold)">AI</text>
+    <text x="3" y="24" 
+          font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" 
+          font-weight="600" 
+          font-size="11" 
+          letter-spacing="5.5" 
+          fill="#D4AF37" 
+          opacity="0.95">INTELLIGENCE ILLUMINATED</text>
+  </g>
+</svg>
