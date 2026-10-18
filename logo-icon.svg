@@ -1,86 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" width="100%" height="100%" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%" fill="none">
   <defs>
-    <linearGradient id="iconGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FCE5B0"/>
-      <stop offset="40%" stop-color="#D4AF37"/>
-      <stop offset="80%" stop-color="#AA7C1E"/>
-      <stop offset="100%" stop-color="#E6C26D"/>
+    <!-- Velocity Blades Gradient: Crisp Platinum to Titanium -->
+    <linearGradient id="velocitySilver" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
     </linearGradient>
-    <linearGradient id="iconGoldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFE8B5" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#C59B27" stop-opacity="0.2"/>
+
+    <!-- Anchored Core Gradient: Architectural Radiant Gold -->
+    <linearGradient id="coreGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDF0CD"/>
+      <stop offset="35%" stop-color="#D4AF37"/>
+      <stop offset="75%" stop-color="#AA7C1E"/>
+      <stop offset="100%" stop-color="#D4AF37"/>
     </linearGradient>
-    <linearGradient id="iconTealGem" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2DD4BF"/>
-      <stop offset="100%" stop-color="#0F766E"/>
-    </linearGradient>
-    <linearGradient id="iconPurpleGem" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#A855F7"/>
-      <stop offset="100%" stop-color="#581C87"/>
-    </linearGradient>
-    <linearGradient id="iconCyanGem" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="100%" stop-color="#0369A1"/>
-    </linearGradient>
-    <linearGradient id="iconGoldFacet" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FDE68A"/>
-      <stop offset="100%" stop-color="#B45309"/>
-    </linearGradient>
-    <filter id="iconGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2.5" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+
+    <!-- Subtle Depth Filter -->
+    <filter id="subtleCoreGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#D4AF37" flood-opacity="0.3"/>
     </filter>
   </defs>
 
-  <g transform="translate(5, 5)">
-    <!-- Solar Halo Glow -->
-    <circle cx="50" cy="50" r="46" fill="url(#iconGoldGlow)" filter="url(#iconGlow)" opacity="0.3"/>
+  <!-- VELOCITY BLADES (Aerodynamic Kinetic Thrust) -->
+  <g>
+    <!-- Left Velocity Blade -->
+    <polygon points="16,18 33,18 48,72 38,81" fill="url(#velocitySilver)"/>
+    
+    <!-- Right Velocity Blade -->
+    <polygon points="84,18 67,18 52,72 62,81" fill="url(#velocitySilver)"/>
+    
+    <!-- Kinetic Foundation Vertex -->
+    <polygon points="50,91 38,81 62,81" fill="url(#coreGold)"/>
+  </g>
 
-    <!-- Solar Rays -->
-    <g stroke="url(#iconGoldGrad)" stroke-width="2.5" stroke-linecap="round">
-      <line x1="88" y1="50" x2="102" y2="50"/>
-      <line x1="83" y1="28" x2="94" y2="20"/>
-      <line x1="72" y1="12" x2="80" y2="2"/>
-      <line x1="83" y1="72" x2="94" y2="80"/>
-      <line x1="72" y1="88" x2="80" y2="98"/>
-    </g>
-
-    <!-- Golden Solar Crescent Arc -->
-    <path d="M 68 14 A 42 42 0 0 1 88 50 A 42 42 0 0 1 68 86 A 36 36 0 0 0 82 50 A 36 36 0 0 0 68 14 Z" 
-          fill="url(#iconGoldGrad)" filter="url(#iconGlow)"/>
-
-    <!-- Flare Spikes -->
-    <polygon points="88,50 97,46 95,54" fill="url(#iconGoldGrad)"/>
-    <polygon points="82,26 91,20 87,29" fill="url(#iconGoldGrad)"/>
-    <polygon points="82,74 87,71 91,80" fill="url(#iconGoldGrad)"/>
-    <polygon points="70,12 76,4 72,15" fill="url(#iconGoldGrad)"/>
-    <polygon points="70,88 72,85 76,96" fill="url(#iconGoldGrad)"/>
-
-    <!-- Faceted Geometric Neural Brain -->
-    <polygon points="26,38 38,24 50,30 38,44" fill="url(#iconTealGem)" stroke="#042F2E" stroke-width="0.8"/>
-    <polygon points="38,24 54,20 62,30 50,30" fill="url(#iconCyanGem)" stroke="#042F2E" stroke-width="0.8"/>
-    <polygon points="54,20 68,26 62,30" fill="url(#iconGoldFacet)" stroke="#042F2E" stroke-width="0.8"/>
-
-    <polygon points="26,38 38,44 32,58 20,50" fill="url(#iconPurpleGem)" stroke="#042F2E" stroke-width="0.8"/>
-    <polygon points="38,44 52,42 48,56 32,58" fill="url(#iconTealGem)" stroke="#042F2E" stroke-width="0.8"/>
-    <polygon points="52,42 66,38 68,52 48,56" fill="url(#iconCyanGem)" stroke="#042F2E" stroke-width="0.8"/>
-    <polygon points="62,30 68,26 74,38 66,38" fill="url(#iconGoldFacet)" stroke="#042F2E" stroke-width="0.8"/>
-    <polygon points="66,38 74,38 76,54 68,52" fill="url(#iconPurpleGem)" stroke="#042F2E" stroke-width="0.8"/>
-
-    <polygon points="20,50 32,58 30,72 18,64" fill="url(#iconCyanGem)" stroke="#042F2E" stroke-width="0.8"/>
-    <polygon points="32,58 48,56 46,72 30,72" fill="url(#iconGoldFacet)" stroke="#042F2E" stroke-width="0.8"/>
-    <polygon points="48,56 68,52 64,68 46,72" fill="url(#iconTealGem)" stroke="#042F2E" stroke-width="0.8"/>
-    <polygon points="68,52 76,54 70,68 64,68" fill="url(#iconCyanGem)" stroke="#042F2E" stroke-width="0.8"/>
-
-    <polygon points="30,72 46,72 42,82 34,80" fill="url(#iconPurpleGem)" stroke="#042F2E" stroke-width="0.8"/>
-    <polygon points="46,72 58,70 52,82 42,82" fill="url(#iconTealGem)" stroke="#042F2E" stroke-width="0.8"/>
-
-    <!-- Synaptic Nodes -->
-    <circle cx="38" cy="24" r="2" fill="#FFFFFF"/>
-    <circle cx="50" cy="30" r="1.8" fill="#FDE68A"/>
-    <circle cx="48" cy="56" r="2.2" fill="#FFFFFF"/>
-    <circle cx="68" cy="52" r="1.8" fill="#5EEAD4"/>
-    <circle cx="32" cy="58" r="1.6" fill="#FDE68A"/>
-    <circle cx="46" cy="72" r="1.8" fill="#FFFFFF"/>
+  <!-- THE CORE (Anchored Central Keystone: Strength, Governance & Stability) -->
+  <g filter="url(#subtleCoreGlow)">
+    <!-- Outer Keystone Diamond -->
+    <polygon points="50,29 64,48 50,67 36,48" fill="url(#coreGold)"/>
+    
+    <!-- Inner Architectural Nexus -->
+    <polygon points="50,37 57,48 50,59 43,48" fill="#041619"/>
+    
+    <!-- Core Horizon Spark / Illumination -->
+    <circle cx="50" cy="48" r="2.2" fill="#FFFFFF"/>
   </g>
 </svg>

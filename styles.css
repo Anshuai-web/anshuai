@@ -157,49 +157,6 @@ input[type=range] {
 }
 
 /* Hero Showcase Frame */
-.hero-art-frame {
-  border: 1.5px solid rgba(212, 175, 55, 0.4);
-  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8), 0 0 35px -5px rgba(20, 184, 166, 0.25);
-}
 
-/* Hero Banner "Explore Solutions" Interactive Overlay */
-.explore-solutions-overlay {
-  position: absolute;
-  left: 82.1%;
-  top: 45.8%;
-  width: 15.2%;
-  height: 8.4%;
-  border-radius: 9999px;
-  cursor: pointer;
-  border: 2px solid transparent;
-  background-color: transparent;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  display: block;
-  z-index: 30;
-}
-
-.explore-solutions-overlay:hover,
-.explore-solutions-overlay:focus-visible {
-  border-color: #F4E3B2 !important;
-  background-color: rgba(212, 175, 55, 0.25) !important;
-  box-shadow: 0 0 25px 4px rgba(212, 175, 55, 0.75), inset 0 0 15px rgba(212, 175, 55, 0.4) !important;
-  transform: scale(1.03);
-}
-
-.explore-solutions-overlay:active {
-  transform: scale(0.97);
-  background-color: rgba(212, 175, 55, 0.45) !important;
-}
-
-@media (max-width: 640px) {
-  .explore-solutions-overlay::after {
-    content: '';
-    position: absolute;
-    top: -14px;
-    bottom: -14px;
-    left: -14px;
-    right: -14px;
-  }
-}
 
 
