@@ -175,4 +175,49 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 800);
         });
     }
+
+    // 6. Careers Application Form Submission
+    const careerForm = document.getElementById('careerForm');
+    const careerSuccess = document.getElementById('careerSuccess');
+
+    if (careerForm) {
+        careerForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Check honeypot
+            const careerBotCheck = document.getElementById('careerBotCheck');
+            if (careerBotCheck && careerBotCheck.value.trim() !== '') {
+                console.warn('Bot application blocked.');
+                return;
+            }
+
+            const submitBtn = careerForm.querySelector('button[type="submit"]');
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin mr-2"></i> Transmitting Application...`;
+            }
+
+            const sanitize = (str) => str ? String(str).replace(/[<>]/g, '') : '';
+            const applicantData = {
+                name: sanitize(document.getElementById('careerName')?.value),
+                email: sanitize(document.getElementById('careerEmail')?.value),
+                phone: sanitize(document.getElementById('careerPhone')?.value),
+                experience: sanitize(document.getElementById('careerExperience')?.value),
+                role: sanitize(document.getElementById('careerRole')?.value),
+                link: sanitize(document.getElementById('careerLink')?.value),
+                message: sanitize(document.getElementById('careerMessage')?.value)
+            };
+
+            setTimeout(() => {
+                if (submitBtn) {
+                    submitBtn.classList.add('hidden');
+                }
+                if (careerSuccess) {
+                    careerSuccess.classList.remove('hidden');
+                    careerSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            }, 800);
+        });
+    }
 });
+
