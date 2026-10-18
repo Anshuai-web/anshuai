@@ -35,11 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (navbar) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 30) {
-                navbar.classList.add('py-2');
-                navbar.classList.remove('py-3', 'sm:py-4');
+                navbar.classList.add('py-1.5', 'sm:py-2');
+                navbar.classList.remove('py-2.5', 'py-3', 'sm:py-4');
             } else {
-                navbar.classList.remove('py-2');
-                navbar.classList.add('py-3', 'sm:py-4');
+                navbar.classList.remove('py-1.5', 'sm:py-2');
+                navbar.classList.add('py-2.5', 'sm:py-4');
             }
         });
     }

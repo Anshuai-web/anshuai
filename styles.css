@@ -191,3 +191,15 @@ input[type=range] {
   background-color: rgba(212, 175, 55, 0.45) !important;
 }
 
+@media (max-width: 640px) {
+  .explore-solutions-overlay::after {
+    content: '';
+    position: absolute;
+    top: -14px;
+    bottom: -14px;
+    left: -14px;
+    right: -14px;
+  }
+}
+
+
