@@ -143,6 +143,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
+            // Check privacy consent
+            const consentCheck = document.getElementById('consentCheck');
+            if (consentCheck && !consentCheck.checked) {
+                alert('Please consent to the processing of your contact details in accordance with our Privacy Policy to proceed.');
+                consentCheck.focus();
+                return;
+            }
+
             const submitBtn = assessmentForm.querySelector('button[type="submit"]');
             if (submitBtn) {
                 submitBtn.disabled = true;
@@ -191,6 +199,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
+            // Check candidate privacy consent
+            const careerConsentCheck = document.getElementById('careerConsentCheck');
+            if (careerConsentCheck && !careerConsentCheck.checked) {
+                alert('Please agree to the processing and retention of your candidacy application in accordance with our Privacy Policy.');
+                careerConsentCheck.focus();
+                return;
+            }
+
             const submitBtn = careerForm.querySelector('button[type="submit"]');
             if (submitBtn) {
                 submitBtn.disabled = true;
@@ -219,5 +235,55 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 800);
         });
     }
+
+    // 7. Cookie Consent & Preference Management (ePrivacy & DPDP Act Compliance)
+    window.openCookieSettings = function() {
+        showCookieBanner(true);
+    };
+
+    function showCookieBanner(force = false) {
+        if (!force && localStorage.getItem('anshuai_cookie_consent')) return;
+        if (document.getElementById('cookieConsentBanner')) return;
+
+        const banner = document.createElement('div');
+        banner.id = 'cookieConsentBanner';
+        banner.className = 'fixed bottom-4 inset-x-4 sm:left-auto sm:right-6 sm:max-w-md z-50 p-5 rounded-2xl backdrop-blur-2xl bg-[#041619]/95 border border-gold/40 shadow-2xl shadow-black/80 space-y-3 transition-all transform duration-300';
+        banner.innerHTML = `
+            <div class="flex items-start justify-between gap-3">
+                <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-white font-heading">
+                    <i class="fa-solid fa-cookie-bite text-gold"></i>
+                    <span>Privacy & Cookie Preferences</span>
+                </div>
+                <button onclick="document.getElementById('cookieConsentBanner')?.remove()" class="text-slate-400 hover:text-white p-1 text-xs" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+                We use strictly necessary cookies to secure your session and store ROI calculator state. We respect your sovereignty and do not track you across external sites. Learn more in our <a href="./cookies.html" class="text-gold underline hover:text-goldLight">Cookie Policy</a> and <a href="./privacy.html" class="text-gold underline hover:text-goldLight">Privacy Policy</a>.
+            </p>
+            <div class="pt-1 flex items-center gap-2">
+                <button id="btnAcceptAllCookies" class="btn-gold-solid flex-1 py-2 text-xs uppercase font-bold tracking-wider text-center">
+                    Accept All
+                </button>
+                <button id="btnEssentialOnlyCookies" class="flex-1 py-2 rounded-xl bg-white/5 border border-white/10 hover:border-gold/40 text-xs font-semibold text-slate-200 text-center transition">
+                    Essential Only
+                </button>
+            </div>
+        `;
+        document.body.appendChild(banner);
+
+        document.getElementById('btnAcceptAllCookies')?.addEventListener('click', () => {
+            localStorage.setItem('anshuai_cookie_consent', 'all');
+            banner.remove();
+        });
+
+        document.getElementById('btnEssentialOnlyCookies')?.addEventListener('click', () => {
+            localStorage.setItem('anshuai_cookie_consent', 'essential');
+            banner.remove();
+        });
+    }
+
+    // Initialize banner check
+    showCookieBanner();
 });
 

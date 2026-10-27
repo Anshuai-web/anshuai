@@ -569,6 +569,14 @@
                             <textarea id="careerMessage" rows="4" required placeholder="Tell us about your biggest platform implementation, favorite ServiceNow or AI technical challenge, and what excites you about AnshuAI..." class="w-full bg-[#041619] border border-gold/40 rounded-xl p-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold transition"></textarea>
                         </div>
 
+                        <!-- Statutory Candidate Consent Checkbox (DPDP Act & GDPR) -->
+                        <div class="pt-1 flex items-start gap-2.5 text-xs text-slate-300">
+                            <input type="checkbox" id="careerConsentCheck" required class="mt-1 w-4 h-4 rounded border-gold/40 bg-[#041619] text-gold focus:ring-gold accent-[#D4AF37] cursor-pointer">
+                            <label for="careerConsentCheck" class="cursor-pointer text-[11px] sm:text-xs leading-relaxed text-slate-300">
+                                I consent to AnshuAI Technologies Pvt. Ltd. collecting and processing my resume and candidacy details for employment opportunities pursuant to the <a href="./privacy.html" class="text-gold underline hover:text-goldLight" target="_blank">Privacy Policy</a>.
+                            </label>
+                        </div>
+
                         <div class="pt-2">
                             <button type="submit" class="btn-gold-solid w-full py-3.5 text-xs sm:text-sm uppercase tracking-wider font-bold shadow-xl flex items-center justify-center gap-2">
                                 <span>Submit Candidacy Application</span>
@@ -734,12 +742,22 @@
                 </div>
             </div>
 
-            <div class="pt-8 border-t border-gold/20 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
-                <p>&copy; 2026 AnshuAI Technologies Pvt. Ltd. All rights reserved. A Vellicor Technologies Company.</p>
-                <div class="flex items-center gap-6">
-                    <a href="./careers.html" class="text-gold hover:underline">Careers</a>
-                    <a href="./about.html" class="hover:text-slate-300 transition">Security &amp; Compliance</a>
-                    <a href="./contact.html" class="hover:text-slate-300 transition">Contact</a>
+                        <!-- MANDATORY STATUTORY TRADEMARK DISCLAIMER -->
+            <div class="pt-6 border-t border-gold/15 text-[11px] text-slate-500 leading-relaxed">
+                <p>
+                    <strong>Statutory Trademark Notice:</strong> ServiceNow, the ServiceNow logo, Now Platform, and Knowledge are registered trademarks of ServiceNow, Inc. in the United States and/or other countries. AnshuAI Technologies Pvt. Ltd. is an independent technology consultancy and is not affiliated with, sponsored by, or endorsed by ServiceNow, Inc. All other product names, logos, and brands are property of their respective owners.
+                </p>
+            </div>
+
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
+                <p>&copy; 2026 AnshuAI Technologies Pvt. Ltd. All rights reserved. Registered domain: <strong>anshuai.in</strong></p>
+                <div class="flex flex-wrap items-center gap-x-5 gap-y-2">
+                    <a href="./privacy.html" class="hover:text-gold transition">Privacy Policy</a>
+                    <a href="./terms.html" class="hover:text-gold transition">Terms of Service</a>
+                    <a href="./cookies.html" class="hover:text-gold transition">Cookie Policy</a>
+                    <button onclick="window.openCookieSettings && window.openCookieSettings()" class="hover:text-gold transition text-left">Cookie Preferences</button>
+                    <a href="./careers.html" class="hover:text-gold text-slate-300 transition">Careers</a>
+                    <a href="./contact.html" class="hover:text-slate-200 transition">Contact</a>
                 </div>
             </div>
         </div>
